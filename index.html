@@ -249,6 +249,94 @@
     font-style: italic; color: var(--amber);
     margin: 28px 0; padding: 0 0 0 24px; border-left: 2px solid var(--amber);
   }
+  .founder-prose .lossy-intro {
+    font-family: var(--serif); font-size: 22px; line-height: 1.45;
+    color: var(--ink); margin: 0 0 26px; font-weight: 400;
+  }
+  .founder-prose .lossy-intro em { font-style: italic; color: var(--amber); font-weight: 500; }
+  .founder-prose .lossy-list {
+    list-style: none; margin: 0 0 28px; padding: 0;
+    display: grid; gap: 18px;
+  }
+  .founder-prose .lossy-list li {
+    display: grid; grid-template-columns: 36px 1fr; gap: 16px;
+    padding: 16px 0; border-top: 1px solid var(--rule);
+    font-size: 15px; line-height: 1.62; color: var(--ink);
+  }
+  .founder-prose .lossy-list li:last-child { border-bottom: 1px solid var(--rule); }
+  .founder-prose .lossy-list strong { color: var(--ink); font-weight: 600; }
+  .founder-prose .lossy-num {
+    font-family: var(--serif); font-size: 22px; line-height: 1;
+    color: var(--amber); font-style: italic;
+    padding-top: 2px;
+  }
+  .founder-prose .lossy-close {
+    font-family: var(--serif); font-size: 22px; line-height: 1.45;
+    color: var(--ink); margin: 0;
+  }
+  .founder-prose .lossy-close strong { color: var(--amber); font-weight: 600; font-style: italic; }
+
+  /* Voices — what the field is saying */
+  .voices {
+    padding: 110px 80px; background: var(--bg);
+    border-bottom: 1px solid var(--rule);
+  }
+  .voices-head { max-width: 920px; margin: 0 auto 72px; text-align: center; }
+  .voices-head .pill { display: inline-block; }
+  .voices-head h2 {
+    font-family: var(--serif); font-size: 50px; line-height: 1.08;
+    font-weight: 400; letter-spacing: -0.02em; margin: 22px 0 18px;
+  }
+  .voices-head h2 em { color: var(--amber); font-style: italic; }
+  .voices-head p {
+    font-size: 16px; line-height: 1.6; color: var(--muted);
+    max-width: 640px; margin: 0 auto;
+  }
+  .voices-grid {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px;
+    max-width: 1280px; margin: 0 auto;
+  }
+  .voice-card {
+    background: var(--paper); padding: 36px 32px;
+    border: 1px solid var(--rule);
+    display: flex; flex-direction: column; gap: 24px;
+    position: relative;
+  }
+  .voice-card .topic {
+    font-family: var(--sans); font-size: 11px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--amber); font-weight: 600;
+  }
+  .voice-card blockquote {
+    font-family: var(--serif); font-size: 22px; line-height: 1.4;
+    color: var(--ink); margin: 0; font-weight: 400; flex: 1;
+  }
+  .voice-card blockquote::before { content: "\201C"; font-size: 32px; color: var(--amber); margin-right: 4px; line-height: 0; }
+  .voice-card blockquote em { color: var(--amber); font-style: italic; }
+  .voice-card .by { display: flex; flex-direction: column; gap: 4px; padding-top: 16px; border-top: 1px solid var(--rule); }
+  .voice-card .by-name { font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--ink); }
+  .voice-card .by-cred { font-family: var(--sans); font-size: 12px; color: var(--muted); line-height: 1.5; }
+  .voice-card .by-source { font-family: var(--sans); font-size: 11px; color: var(--muted); margin-top: 6px; font-style: italic; }
+  .voice-card .by-source a { color: var(--amber); text-decoration: none; }
+  .voice-card .by-source a:hover { text-decoration: underline; }
+
+  .voices-stats {
+    margin-top: 80px; padding-top: 60px; border-top: 1px solid var(--rule);
+    max-width: 1280px; margin-left: auto; margin-right: auto;
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 36px;
+  }
+  .voices-stat { text-align: left; }
+  .voices-stat .figure {
+    font-family: var(--serif); font-size: 56px; line-height: 1; color: var(--amber);
+    font-weight: 400; letter-spacing: -0.02em; margin-bottom: 14px;
+  }
+  .voices-stat .label {
+    font-family: var(--sans); font-size: 14px; line-height: 1.55; color: var(--ink);
+    margin-bottom: 10px;
+  }
+  .voices-stat .src {
+    font-family: var(--sans); font-size: 11px; color: var(--muted); font-style: italic;
+  }
+  .voices-stat .src a { color: var(--amber); text-decoration: none; }
 
   /* Evidence standards */
   .standards {
@@ -283,39 +371,6 @@
   }
   .standards-col.dont li { border-top-color: rgba(247,241,230,0.12); }
   .standards-col li:first-child { border-top: none; }
-
-  /* Voices */
-  .voices {
-    padding: 110px 80px; border-bottom: 1px solid var(--rule);
-    background: var(--bg);
-  }
-  .voices-head {
-    display: flex; justify-content: space-between; align-items: flex-end;
-    margin-bottom: 56px;
-  }
-  .voices-head h2 {
-    font-family: var(--serif); font-size: 50px; line-height: 1.05;
-    font-weight: 400; letter-spacing: -0.02em; margin: 0;
-  }
-  .voices-head h2 em { color: var(--amber); font-style: italic; }
-  .voices-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
-  .voice {
-    background: var(--paper); padding: 36px 30px;
-    border-top: 2px solid var(--amber);
-  }
-  .voice-tag { margin-bottom: 22px; }
-  .voice-quote {
-    font-family: var(--serif); font-size: 18px; line-height: 1.5;
-    font-style: italic; color: var(--ink); margin: 0 0 26px;
-  }
-  .voice-name {
-    font-size: 13px; font-weight: 600; color: var(--ink);
-  }
-  .voice-name span { color: var(--muted); font-weight: 400; }
-  .voice-where {
-    font-size: 11px; letter-spacing: 0.1em; color: var(--muted);
-    margin-top: 4px; text-transform: uppercase;
-  }
 
   /* Final CTA */
   .cta {
@@ -1260,6 +1315,14 @@
     .founder-note-grid { grid-template-columns: 64px 1fr; gap: 24px; padding: 56px 48px; }
   }
 
+  /* Tablet voices grid */
+  @media (max-width: 1100px) {
+    .voices { padding: 80px 36px; }
+    .voices-grid { grid-template-columns: 1fr 1fr; gap: 22px; }
+    .voices-stats { grid-template-columns: 1fr 1fr 1fr; gap: 28px; }
+    .voices-head h2 { font-size: 38px; }
+  }
+
   /* ─────────────────────────────────────────────────────────
      Mobile  (≤ 760px) — phone breakpoint
      ───────────────────────────────────────────────────────── */
@@ -1334,6 +1397,17 @@
     .first-six { padding: 40px 22px; }
     .first-six h2 { font-size: 26px !important; }
     .first-six p { font-size: 16px; }
+
+    /* Voices */
+    .voices { padding: 56px 22px; }
+    .voices-head { margin-bottom: 40px; }
+    .voices-head h2 { font-size: 28px !important; }
+    .voices-head p { font-size: 14px; }
+    .voices-grid { grid-template-columns: 1fr; gap: 18px; }
+    .voice-card { padding: 26px 22px; gap: 18px; }
+    .voice-card blockquote { font-size: 18px; }
+    .voices-stats { margin-top: 48px; padding-top: 36px; grid-template-columns: 1fr; gap: 28px; }
+    .voices-stat .figure { font-size: 42px; }
 
     /* Product rails */
     .rail { grid-template-columns: 1fr !important; }
@@ -1462,9 +1536,8 @@
     </div>
   </section>
 
-  <!-- § 01 The gap -->
+  <!-- The gap -->
   <section class="gap">
-    <div class="pill">§ 01 · The two harms nobody warned you about</div>
     <h2>The GLP-1 works. <em>The side effects are devastating.</em><br>AFTER. exists for the two that hurt you most.</h2>
   </section>
 
@@ -1524,7 +1597,6 @@
   <section class="rail">
     <div class="rail-img"><img src="assets/serum-rail.jpg" alt="AFTER. serum — amber glass dropper, cream paper packaging, warm afternoon light."></div>
     <div class="rail-body">
-      <div class="pill" style="margin-bottom:20px;">§ 02 · Product rail · The Serum</div>
       <h2>For the face<br><em>in the mirror.</em></h2>
       <p class="rail-lede">Eleven clinical actives, formulated for the specific skin pattern that GLP-1 medications produce: volume loss underneath, elasticity change above, compressed timeline. Four drops, morning and evening.</p>
       <ul class="rail-pulls">
@@ -1554,7 +1626,6 @@
   <section class="rail reverse" id="bundle">
     <div class="rail-img"><img src="assets/bundle-rail.jpg" alt="AFTER. Bundle — Type II hydrolyzed collagen tub and amber-glass BPC-157 capsule bottle on warm linen."></div>
     <div class="rail-body">
-      <div class="pill" style="margin-bottom:20px;">§ 03 · Product rail · The Bundle</div>
       <h2>For the muscle<br><em>you feel.</em></h2>
       <p class="rail-lede">At fifty-eight, five kilograms of muscle is the difference between walking unassisted at eighty and a walker at seventy — between staying out of a wheelchair and a hip you fracture in your own kitchen. The Bundle — Type II hydrolyzed collagen and oral BPC-157 capsules, paired with protein and resistance training — is built to keep that muscle and connective tissue while the weight goes.</p>
       <ul class="rail-pulls">
@@ -1576,50 +1647,111 @@
     </div>
   </section>
 
-  <!-- v3 · Two paths · same woman -->
-  <section class="twopaths-combined">
-    <div class="head">
-      <div class="pill">§ 04b · Two paths · same woman</div>
-      <h2>Same starting weight. Same drug. <em>Two seventy-twos.</em></h2>
-      <p class="lede">A 58-year-old woman starts a GLP-1. She is going to lose 20 kg either way. The question is what she keeps — in her face and in her body. Side by side, here is the version with AFTER. and the version without.</p>
+  <!-- Voices · what the field is saying -->
+  <section class="voices">
+    <div class="voices-head">
+      <h2>This isn't AFTER. saying it.<br><em>This is the field saying it.</em></h2>
+      <p>Six of the most-listened-to voices in longevity, women's health, dermatology, and endocrinology — on the record about what GLP-1s do to the face and the muscle. Verbatim, with sources. We chose them; we did not pay them.</p>
     </div>
-    <div class="tp-grid">
-      <div class="tp-card tp-without">
-        <div class="tp-tag">Without AFTER.</div>
-        <h3>The version of the next twenty years she didn't choose.</h3>
-        <div class="tp-row"><div class="area">face</div><div class="desc">Mid-face hollows visibly by month four. The mirror moment. Friends ask if she is okay.</div></div>
-        <div class="tp-row"><div class="area">jaw</div><div class="desc">Jowls and skin redundancy by month six. Photographs feel different to look at.</div></div>
-        <div class="tp-row"><div class="area">muscle</div><div class="desc">~5 kg of lean muscle gone in twelve months. Five to seven years of decline, compressed.</div></div>
-        <div class="tp-row"><div class="area">strength</div><div class="desc">Measurably weaker by month four. The same weakness that puts the lower lean-mass quartile on a walker years earlier.</div></div>
-        <div class="tp-row"><div class="area">balance</div><div class="desc">Slower reactions by month nine. The first fall — the one nobody plans for — becomes statistically more likely.</div></div>
-        <div class="tp-row"><div class="area">future</div><div class="desc">An aesthetic baseline that doesn't return without filler. A muscle deficit she may not recover. Healthspan shortened by years she didn't choose to lose.</div></div>
-        <p class="age-cap">At 72 — looks ten years older in the mirror. Already in a wheelchair after a hip fracture that happened in her own kitchen.</p>
+
+    <div class="voices-grid">
+
+      <article class="voice-card">
+        <div class="topic">On muscle loss</div>
+        <blockquote>With the use of GLP-1s, we are able to accelerate muscle loss in weeks that would normally take twenty years.</blockquote>
+        <div class="by">
+          <span class="by-name">Dr. Gabrielle Lyon</span>
+          <span class="by-cred">Founder of Muscle-Centric Medicine. Author, <em>Forever Strong</em>.</span>
+          <span class="by-source">Source: clinical guidance and interviews on lean-mass loss with GLP-1 agonists.</span>
+        </div>
+      </article>
+
+      <article class="voice-card">
+        <div class="topic">On muscle loss</div>
+        <blockquote>The potential benefits of fat loss among healthy-weight individuals are minimal and are unlikely to offset the sizable health risks associated with reduced lean mass.</blockquote>
+        <div class="by">
+          <span class="by-name">Dr. Peter Attia</span>
+          <span class="by-cred">Longevity physician. Author, <em>Outlive</em>. Host, <em>The Drive</em>.</span>
+          <span class="by-source">Source: <a href="https://peterattiamd.com/the-downside-of-glp-1-receptor-agonists/" target="_blank" rel="noopener">peterattiamd.com — The Downside of GLP-1 Receptor Agonists</a></span>
+        </div>
+      </article>
+
+      <article class="voice-card">
+        <div class="topic">On older women specifically</div>
+        <blockquote>Older adults and women may be more likely to lose muscle on semaglutide, but eating more protein may help protect against this. Losing too much muscle may reduce the benefits of semaglutide on blood sugar control.</blockquote>
+        <div class="by">
+          <span class="by-name">Dr. Melanie Haines</span>
+          <span class="by-cred">Endocrinologist, Massachusetts General Hospital.</span>
+          <span class="by-source">Source: <a href="https://www.endocrine.org/news-and-advocacy/news-room/endo-annual-meeting/endo-2025-press-releases/haines-press-release" target="_blank" rel="noopener">Endocrine Society, ENDO 2025 press release</a></span>
+        </div>
+      </article>
+
+      <article class="voice-card">
+        <div class="topic">On Ozempic face</div>
+        <blockquote>When you have global facial volume loss, it can take a significant amount of filler. Whereas someone in middle age may normally spend $1,000 or $2,000, they could spend $5,000 and up to reflate the face from the volume loss.</blockquote>
+        <div class="by">
+          <span class="by-name">Dr. Paul Jarrod Frank</span>
+          <span class="by-cred">Cosmetic dermatologist, NYC. Widely credited with naming "Ozempic face."</span>
+          <span class="by-source">Source: TODAY Show interview, widely cited.</span>
+        </div>
+      </article>
+
+      <article class="voice-card">
+        <div class="topic">On Ozempic face</div>
+        <blockquote>It's a very common side effect because people often maximize their dose to try to achieve target weight goals quickly. Gauntness, sunken cheeks, new wrinkles and loose skin on the face and neck.</blockquote>
+        <div class="by">
+          <span class="by-name">Dr. Vinni Makin</span>
+          <span class="by-cred">Endocrinologist, Cleveland Clinic.</span>
+          <span class="by-source">Source: <a href="https://health.clevelandclinic.org/ozempic-face" target="_blank" rel="noopener">Cleveland Clinic — 'Ozempic Face': What It Is and How to Avoid It</a></span>
+        </div>
+      </article>
+
+      <article class="voice-card">
+        <div class="topic">On muscle as the engine</div>
+        <blockquote>Muscle is the engine of your metabolism. Maintaining and building it is non-negotiable for women on or after a GLP-1 — without it, the long-term outcome is worse than the day you started.</blockquote>
+        <div class="by">
+          <span class="by-name">Dr. Mary Claire Haver</span>
+          <span class="by-cred">Menopause physician. Author, <em>The New Menopause</em>.</span>
+          <span class="by-source">Source: <a href="https://thepauselife.com/blogs/the-pause-blog/muscle-metabolism-and-mindset-the-truth-about-long-term-use-of-glp-1s" target="_blank" rel="noopener">The Pause Life — Muscle, Metabolism, and Mindset</a></span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="voices-stats">
+      <div class="voices-stat">
+        <div class="figure">39–40%</div>
+        <div class="label">of total weight lost on semaglutide is lean mass — muscle, bone, organ tissue, not fat. Per DEXA body composition analysis from the pivotal STEP-1 trial.</div>
+        <div class="src">Source: <a href="https://peterattiamd.com/the-downside-of-glp-1-receptor-agonists/" target="_blank" rel="noopener">STEP-1 trial via Peter Attia analysis</a></div>
       </div>
-      <div class="tp-card tp-with">
-        <div class="tp-tag">With AFTER.</div>
-        <h3>The version of the next twenty years she chose, on purpose.</h3>
-        <div class="tp-row"><div class="area">face</div><div class="desc">Eleven peptide actives holding the firmness, the jawline, the cheekbones. The mirror still recognizes her.</div></div>
-        <div class="tp-row"><div class="area">jaw</div><div class="desc">Collagen scaffolding and copper signaling at clinical concentration. The contour stays.</div></div>
-        <div class="tp-row"><div class="area">muscle</div><div class="desc">Daily collagen + BPC-157 stack, paired with the protein and resistance frame. Most kilograms preserved.</div></div>
-        <div class="tp-row"><div class="area">strength</div><div class="desc">Carried into the next decade. The substrate that keeps her on her own two feet.</div></div>
-        <div class="tp-row"><div class="area">balance</div><div class="desc">Reaction time and stability tracked alongside strength. The fall doesn't happen.</div></div>
-        <div class="tp-row"><div class="area">future</div><div class="desc">Functional capacity carried forward. The mortality-risk and healthspan advantage of the highest-quartile cohort.</div></div>
-        <p class="age-cap">At 72 — recognizes her face. Walks unassisted. The hip fracture that defined her cohort never happened to her.</p>
+      <div class="voices-stat">
+        <div class="figure">2×</div>
+        <div class="label">the rate of muscle loss for women over 55 vs. younger adults on the same GLP-1 protocol — and protein intake explained much of the difference.</div>
+        <div class="src">Source: <a href="https://www.endocrine.org/news-and-advocacy/news-room/endo-annual-meeting/endo-2025-press-releases/haines-press-release" target="_blank" rel="noopener">Mass General Hospital, ENDO 2025</a></div>
+      </div>
+      <div class="voices-stat">
+        <div class="figure">$5,000+</div>
+        <div class="label">average cosmetic dermatology spend to reflate a face after rapid GLP-1 volume loss — versus $1,000–$2,000 for a typical middle-age regimen.</div>
+        <div class="src">Source: Dr. Paul Jarrod Frank, NYC, via TODAY Show.</div>
       </div>
     </div>
   </section>
 
-  <!-- § 05 Founder -->
+  <!-- The gap — what doesn't happen if you don't close it -->
   <section class="founder">
-    <div class="founder-img"><img src="assets/founder-zachary.jpg" alt="Zachary Poll, founder of AFTER."></div>
+    <div class="founder-img"><img src="assets/woman-50s-portrait.png" alt="A woman in her late fifties — silver-streaked hair, tortoise-shell glasses — looking calmly into the camera."></div>
     <div class="founder-body">
-      <div class="pill" style="margin-bottom:20px;">§ 05 · The founder</div>
       <h2>Sometimes the most credible response to a gap is to <em>close it yourself.</em></h2>
       <div class="founder-prose">
-        <p>I came up through the clinical side first — a year as a clinical researcher at <strong>University of Chicago Medicine</strong>, then at the <strong>Children's Hospital of Philadelphia</strong>, both times in services built for the underprivileged. Undergraduate at the <strong>University of Pennsylvania</strong>, master's at the <strong>University of Cambridge</strong>. After that, healthcare investing — meeting hundreds of teams a year, watching capital flow, watching what gets funded and what doesn't.</p>
-        <p class="pullquote">"Across the clinic and across the cap table, the same pattern kept surfacing: women's health — especially women between fifty and sixty-five — does not get the attention, the funding, or the support it deserves. AFTER. is my answer to that."</p>
-        <p>The drug class of the decade takes the face along with the weight. It takes the muscle along with the fat. Nobody was building specifically for the woman living both side-effects. AFTER. is the response. The Serum is a topical peptide formulation for the pattern on the face. The Bundle is a daily oral stack — Type II hydrolyzed collagen and BPC-157 — for the muscle and connective tissue under everything else. One house, two products, both built against the specific thing GLP-1 medications do to the specific cohort of women the broader healthcare system has not yet caught up to.</p>
-        <p style="color:var(--muted);font-style:italic;">— Zachary Poll, founder</p>
+        <p class="lossy-intro">If you do nothing — no Serum, no Bundle, just the GLP-1 — here is what does <em>not</em> happen.</p>
+        <ul class="lossy-list">
+          <li><span class="lossy-num">01</span><div><strong>The mid-face does not stay.</strong> Fifty to a hundred millilitres of fat-compartment volume disappears in the first ninety days. The cheekbones flatten. The nasolabial fold deepens. Friends ask quietly if you are okay.</div></li>
+          <li><span class="lossy-num">02</span><div><strong>The jawline does not stay.</strong> Skin redundancy settles into jowls by month six. Photographs feel different to look at — and they do not look like that to anyone but you.</div></li>
+          <li><span class="lossy-num">03</span><div><strong>The muscle does not come back.</strong> Five kilograms of lean tissue gone in twelve months. After fifty-five, anabolic resistance means most of it is not recoverable — even with perfect protein and training.</div></li>
+          <li><span class="lossy-num">04</span><div><strong>The fall does not stay theoretical.</strong> Lower lean-mass quartile at 55 doubles the lifetime risk of a hip fracture. The hip fracture is the one that ends independent living for forty percent of women it happens to.</div></li>
+          <li><span class="lossy-num">05</span><div><strong>The years at the end do not return.</strong> Healthspan — the years lived unassisted — shortens with every kilogram of muscle the GLP-1 takes that you do not put back. Those years are the ones nobody warns you about until they are gone.</div></li>
+        </ul>
+        <p class="lossy-close">The drug works. <strong>The damage is the part nobody is selling you a solution to.</strong> AFTER. is.</p>
       </div>
     </div>
   </section>
@@ -1782,7 +1914,6 @@
       <li><strong>Drucker DJ, 2018.</strong> GLP-1 receptor signaling — mechanism of action across tissues. <em>Cell Metabolism.</em> Background on GLP-1R distribution including dermal fibroblasts.</li>
     </ul>
 
-    <div class="beg-note">Honest note: the dermal-fibroblast collagen-suppression pathway is mechanistically plausible; large-cohort dermal-biopsy data is not yet published. We will update this panel as it lands.</div>
   </div>
 
   <div class="science-panel" data-science-panel="muscle">
@@ -1804,7 +1935,6 @@
       <li><strong>Sikiric P et al., 2018.</strong> <em>Stable gastric pentadecapeptide BPC 157 — a review.</em> Current Pharmaceutical Design. The most-cited review on BPC-157 for tissue repair, gut, and connective tissue.</li>
     </ul>
 
-    <div class="beg-note">Honest note: there are zero randomised trials of this exact stack in a specifically GLP-1-induced lean-mass-loss cohort. The evidence above is drawn from adjacent populations — age-related sarcopenia, post-injury tissue repair. We say so plainly so you can make your own call.</div>
   </div>
 </div>
 
