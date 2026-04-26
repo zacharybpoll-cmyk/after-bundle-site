@@ -34,9 +34,10 @@
   a { color: inherit; text-decoration: none; }
 
   *, *::before, *::after { box-sizing: border-box; }
-  html, body { overflow-x: hidden; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { overflow-x: clip; }
   img { max-width: 100%; }
-  .site { width: 100%; max-width: 1440px; margin: 0 auto; background: var(--paper); overflow-x: hidden; }
+  .site { width: 100%; max-width: 1440px; margin: 0 auto; background: var(--paper); overflow-x: clip; }
 
   .pill {
     font-family: var(--sans);
@@ -1415,13 +1416,6 @@
 </head>
 <body>
 <div class="site">
-
-  <!-- v2 · cascade — pre-hero loss strip -->
-  <div class="prehero-loss-c">
-    <span class="num">2 losses</span>
-    <span class="copy">— the face and the muscle. Both happen on the same nine-month timeline. Both are visible in the mirror, felt in the body, and largely irreversible once they set in.</span>
-    <span class="tag">Karakasis 2024 · Sury &amp; Rohrich 2024</span>
-  </div>
 
   <!-- Nav -->
   <header class="nav">
