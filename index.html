@@ -971,14 +971,22 @@
   }
   .product-modal-close {
     position: absolute;
-    top: 16px; right: 16px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: var(--muted);
+    top: 12px; right: 12px;
+    width: 36px; height: 36px;
+    background: rgba(247, 241, 230, 0.92);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    font-size: 22px;
+    color: var(--ink);
     cursor: pointer;
     line-height: 1;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
+  .product-modal-close:hover { background: var(--paper); }
   .product-modal h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 44px;
@@ -1450,19 +1458,6 @@
       </div>
       <div class="hero-img">
         <img src="assets/hero-two-women.jpg" alt="A woman in her late fifties, silver-streaked brunette hair, tortoise-shell glasses, cream linen shirt, standing at a sash window in warm late-morning light.">
-        <div class="img-caption pill">For women on GLP-1</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Founder note immediately under hero -->
-  <section class="founder-note">
-    <div class="founder-note-grid">
-      <div class="avatar"><img src="assets/portrait-confident.jpg" alt="The founder."></div>
-      <div class="note-body">
-        <div class="pill" style="margin-bottom:14px;">A note from the founder</div>
-        <blockquote>"I started AFTER. because the women I love were on these drugs and the side effects were not subtle. <em>The face change is brutal. The muscle change is worse — and harder to take back.</em> If you are taking the drug, you are going to lose what you came for. You should not have to lose the rest."</blockquote>
-        <div class="attr">— Zachary Poll, founder</div>
       </div>
     </div>
   </section>
@@ -1497,7 +1492,7 @@
         </div>
       </div>
       <div class="bio-card">
-        <div class="bio-card-num">Mechanism 02 · Up to 40% lean-mass loss</div>
+        <div class="bio-card-num">Mechanism 02 · Up to 40% lean muscle loss</div>
         <h3>Rapid catabolic state, compounded by post-menopausal anabolic resistance.</h3>
         <div class="muscle-slider">
           <figure class="before">
@@ -1509,8 +1504,8 @@
             <figcaption><span>With the Bundle</span> <span class="stat">preserved</span></figcaption>
           </figure>
         </div>
-        <p>Twenty-five to forty percent of every pound lost on a GLP-1 is lean mass (Karakasis 2024 meta-analysis). Baseline post-menopausal muscle loss already runs three to eight percent per decade; GLP-1 therapy layers additional acceleration on top. For a 58-year-old woman losing 20 kg, roughly five kg of muscle — five to seven years of normal decline compressed into twelve months.</p>
-        <div class="consequence">The functional cost isn't abstract. The jar will not open. The stairs feel longer. The grocery bag is heavier. And the lower lean-mass quartile at 55 doubles your risk of a fall, a fracture, a walker, an assisted-living facility — <strong>years earlier than it had to.</strong></div>
+        <p>Twenty-five to forty percent of every pound lost on a GLP-1 is <strong>lean muscle</strong> (Karakasis 2024 meta-analysis). Baseline post-menopausal muscle loss already runs three to eight percent per decade; GLP-1 therapy layers additional acceleration on top. For a 58-year-old woman losing 20 kg, roughly five kg of muscle — five to seven years of normal decline compressed into twelve months.</p>
+        <div class="consequence">This is not about opening a jar. Lean muscle in your fifties and sixties is the single strongest predictor of <strong>how long you live a healthy life</strong> — how many years you stay out of a wheelchair, how likely you are to fall and fracture a hip, whether you make it to eighty walking on your own. The lower lean-mass quartile at 55 doubles the risk of a fall, a fracture, an assisted-living facility — <strong>years earlier than it had to be.</strong></div>
         <div class="bio-card-links">
           <a class="bio-more" href="#bundle" data-open-product="bundle">See the Bundle ingredient panel →</a>
           <button class="bio-learn" type="button" data-open-science="muscle">See the citations →</button>
@@ -1561,7 +1556,7 @@
     <div class="rail-body">
       <div class="pill" style="margin-bottom:20px;">§ 03 · Product rail · The Bundle</div>
       <h2>For the muscle<br><em>you feel.</em></h2>
-      <p class="rail-lede">At fifty-eight, five kilograms of muscle is the difference between carrying your suitcase and asking for help with it. The Bundle — Type II hydrolyzed collagen and oral BPC-157 capsules, paired with protein and resistance training — is built to keep that muscle and connective tissue while the weight goes.</p>
+      <p class="rail-lede">At fifty-eight, five kilograms of muscle is the difference between walking unassisted at eighty and a walker at seventy — between staying out of a wheelchair and a hip you fracture in your own kitchen. The Bundle — Type II hydrolyzed collagen and oral BPC-157 capsules, paired with protein and resistance training — is built to keep that muscle and connective tissue while the weight goes.</p>
       <ul class="rail-pulls">
         <li>
           <div class="rail-pull-name">Type II hydrolyzed collagen</div>
@@ -1594,11 +1589,11 @@
         <h3>The version of the next twenty years she didn't choose.</h3>
         <div class="tp-row"><div class="area">face</div><div class="desc">Mid-face hollows visibly by month four. The mirror moment. Friends ask if she is okay.</div></div>
         <div class="tp-row"><div class="area">jaw</div><div class="desc">Jowls and skin redundancy by month six. Photographs feel different to look at.</div></div>
-        <div class="tp-row"><div class="area">muscle</div><div class="desc">~5 kg of lean mass gone in twelve months. Five to seven years of decline, compressed.</div></div>
-        <div class="tp-row"><div class="area">grip</div><div class="desc">Measurably weaker by month four. The pickle jar she used to open does not open.</div></div>
-        <div class="tp-row"><div class="area">stairs</div><div class="desc">Slower by month nine. Cardio is easier; the climb home is not.</div></div>
-        <div class="tp-row"><div class="area">future</div><div class="desc">A new aesthetic baseline that doesn't return without filler. A muscle deficit she may not fully recover.</div></div>
-        <p class="age-cap">At 72 — looks ten years older in the mirror. Asks for help with the suitcase. Carries the fall in the back of her mind.</p>
+        <div class="tp-row"><div class="area">muscle</div><div class="desc">~5 kg of lean muscle gone in twelve months. Five to seven years of decline, compressed.</div></div>
+        <div class="tp-row"><div class="area">strength</div><div class="desc">Measurably weaker by month four. The same weakness that puts the lower lean-mass quartile on a walker years earlier.</div></div>
+        <div class="tp-row"><div class="area">balance</div><div class="desc">Slower reactions by month nine. The first fall — the one nobody plans for — becomes statistically more likely.</div></div>
+        <div class="tp-row"><div class="area">future</div><div class="desc">An aesthetic baseline that doesn't return without filler. A muscle deficit she may not recover. Healthspan shortened by years she didn't choose to lose.</div></div>
+        <p class="age-cap">At 72 — looks ten years older in the mirror. Already in a wheelchair after a hip fracture that happened in her own kitchen.</p>
       </div>
       <div class="tp-card tp-with">
         <div class="tp-tag">With AFTER.</div>
@@ -1606,24 +1601,24 @@
         <div class="tp-row"><div class="area">face</div><div class="desc">Eleven peptide actives holding the firmness, the jawline, the cheekbones. The mirror still recognizes her.</div></div>
         <div class="tp-row"><div class="area">jaw</div><div class="desc">Collagen scaffolding and copper signaling at clinical concentration. The contour stays.</div></div>
         <div class="tp-row"><div class="area">muscle</div><div class="desc">Daily collagen + BPC-157 stack, paired with the protein and resistance frame. Most kilograms preserved.</div></div>
-        <div class="tp-row"><div class="area">grip</div><div class="desc">Tracked at quarterly check-ins. Stable through the weight-loss arc.</div></div>
-        <div class="tp-row"><div class="area">stairs</div><div class="desc">The climb home is the same climb home. The grocery bag is still her grocery bag.</div></div>
-        <div class="tp-row"><div class="area">future</div><div class="desc">Functional capacity carried forward. Mortality-risk advantage of the highest-quartile cohort.</div></div>
-        <p class="age-cap">At 72 — looks her age, recognizes her face. Lifts her own suitcase. Walks the stairs. Picks up the dog.</p>
+        <div class="tp-row"><div class="area">strength</div><div class="desc">Carried into the next decade. The substrate that keeps her on her own two feet.</div></div>
+        <div class="tp-row"><div class="area">balance</div><div class="desc">Reaction time and stability tracked alongside strength. The fall doesn't happen.</div></div>
+        <div class="tp-row"><div class="area">future</div><div class="desc">Functional capacity carried forward. The mortality-risk and healthspan advantage of the highest-quartile cohort.</div></div>
+        <p class="age-cap">At 72 — recognizes her face. Walks unassisted. The hip fracture that defined her cohort never happened to her.</p>
       </div>
     </div>
   </section>
 
   <!-- § 05 Founder -->
   <section class="founder">
-    <div class="founder-img"><img src="assets/portrait-confident.jpg" alt="Portrait of a confident, silver-haired woman in her early sixties — the cohort AFTER. is built for."></div>
+    <div class="founder-img"><img src="assets/founder-zachary.jpg" alt="Zachary Poll, founder of AFTER."></div>
     <div class="founder-body">
       <div class="pill" style="margin-bottom:20px;">§ 05 · The founder</div>
       <h2>Sometimes the most credible response to a gap is to <em>close it yourself.</em></h2>
       <div class="founder-prose">
-        <p>Five years as a clinical researcher at the University of Chicago Medicine. A Master's in Translational Research from the University of Pennsylvania. Healthcare investing after that. Every role taught me the same thing, and it is why AFTER. exists: women's health — especially senior women's health — gets systematically less attention, less funding, and slower solutions than it deserves.</p>
-        <p class="pullquote">"The drug class of the decade takes the face along with the weight. It takes the muscle along with the fat. Nobody was building specifically for the woman living both side-effects."</p>
-        <p>AFTER. is the response to that gap. The Serum is a topical peptide formulation for the pattern on the face. The Bundle is a daily oral stack — Type II hydrolyzed collagen and BPC-157 — for the muscle and connective tissue under everything else. One house, one voice, two products — each built against a specific thing GLP-1 medications do to a specific cohort of women that the broader healthcare system has not yet caught up to.</p>
+        <p>I came up through the clinical side first — a year as a clinical researcher at <strong>University of Chicago Medicine</strong>, then at the <strong>Children's Hospital of Philadelphia</strong>, both times in services built for the underprivileged. Undergraduate at the <strong>University of Pennsylvania</strong>, master's at the <strong>University of Cambridge</strong>. After that, healthcare investing — meeting hundreds of teams a year, watching capital flow, watching what gets funded and what doesn't.</p>
+        <p class="pullquote">"Across the clinic and across the cap table, the same pattern kept surfacing: women's health — especially women between fifty and sixty-five — does not get the attention, the funding, or the support it deserves. AFTER. is my answer to that."</p>
+        <p>The drug class of the decade takes the face along with the weight. It takes the muscle along with the fat. Nobody was building specifically for the woman living both side-effects. AFTER. is the response. The Serum is a topical peptide formulation for the pattern on the face. The Bundle is a daily oral stack — Type II hydrolyzed collagen and BPC-157 — for the muscle and connective tissue under everything else. One house, two products, both built against the specific thing GLP-1 medications do to the specific cohort of women the broader healthcare system has not yet caught up to.</p>
         <p style="color:var(--muted);font-style:italic;">— Zachary Poll, founder</p>
       </div>
     </div>
@@ -1633,7 +1628,7 @@
   <section class="cta">
     <p class="hero-tag">The volume returns. You return.</p>
     <h2>Two harms.<br><em>One place to address them.</em></h2>
-    <p class="cta-lede">Whether you are two weeks from your first injection or seven months into your journey — AFTER. is the one place built specifically to mitigate the side effects worth worrying about: a topical serum for the face in the mirror, and a daily oral Bundle for the muscle you feel when you carry groceries up the stairs. Responsible, transparent about evidence, designed to sit alongside your existing care.</p>
+    <p class="cta-lede">Whether you are two weeks from your first injection or seven months into your journey — AFTER. is the one place built specifically to mitigate the side effects worth worrying about: a topical serum for the face in the mirror, and a daily oral Bundle for the muscle that decides whether you walk into your seventies on your own two feet or roll into them in a wheelchair. Responsible, transparent about evidence, designed to sit alongside your existing care.</p>
     <div class="cta-row-dual">
       <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the Serum · $129</a>
       <a class="btn btn-outline" href="#bundle" data-open-product="bundle">Add the Bundle · $129/mo</a>
