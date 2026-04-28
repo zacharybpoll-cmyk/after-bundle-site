@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>AFTER. — For women on GLP-1.</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="AFTER. is for women 50–65 on Ozempic, Wegovy, Mounjaro or Zepbound. A topical peptide serum for the face. A daily oral Bundle (collagen + BPC-157) for the muscle.">
+<meta name="description" content="AFTER. is for women 50–65 on Ozempic, Wegovy, Mounjaro or Zepbound. A topical peptide serum with seven active clinical ingredients for the Ozempic-face pattern.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -180,7 +180,8 @@
   /* Gap section flows directly into the bio cards — drop its bottom border */
   .gap { border-bottom: none; padding-bottom: 72px; }
   .bio-mech {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
+    display: grid; grid-template-columns: 1fr; gap: 32px;
+    max-width: 720px; margin: 0 auto;
   }
   .bio-card {
     padding: 48px 44px; background: var(--bg);
@@ -197,27 +198,27 @@
   .bio-card p { font-size: 15px; line-height: 1.65; color: var(--ink); margin: 0 0 22px; }
   .bio-more { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--amber); }
 
-  /* Muscle-fiber slider visual — inline before/after comparison */
-  .muscle-slider {
+  /* Before/after compare visual — inline mid-face comparison */
+  .compare-slider {
     display: grid; grid-template-columns: 1fr 1fr;
     gap: 2px; margin: 28px 0 26px;
     background: var(--rule);
   }
-  .muscle-slider figure { margin: 0; background: var(--paper); padding: 0; position: relative; }
-  .muscle-slider figure img {
+  .compare-slider figure { margin: 0; background: var(--paper); padding: 0; position: relative; }
+  .compare-slider figure img {
     width: 100%; height: 220px; object-fit: cover; display: block;
   }
-  .muscle-slider figcaption {
+  .compare-slider figcaption {
     font-family: var(--sans); font-size: 10px;
     letter-spacing: 0.22em; text-transform: uppercase;
     color: var(--muted); padding: 12px 14px 0;
     display: flex; justify-content: space-between; align-items: baseline;
   }
-  .muscle-slider figcaption span.stat {
+  .compare-slider figcaption span.stat {
     color: var(--amber); font-weight: 600; letter-spacing: 0.05em;
   }
-  .muscle-slider figure.before figcaption { padding-bottom: 12px; }
-  .muscle-slider figure.after figcaption { padding-bottom: 12px; }
+  .compare-slider figure.before figcaption { padding-bottom: 12px; }
+  .compare-slider figure.after figcaption { padding-bottom: 12px; }
 
   /* Consequence block under Mechanism 02 */
   .consequence {
@@ -1389,8 +1390,8 @@
     .bio-card-num { font-size: 10px; letter-spacing: 0.18em; }
     .bio-card p { font-size: 14px; }
     .consequence { font-size: 15px; padding: 14px 16px; }
-    .muscle-slider figure img { height: 140px; }
-    .muscle-slider figcaption { font-size: 9px; padding: 8px 10px; }
+    .compare-slider figure img { height: 140px; }
+    .compare-slider figcaption { font-size: 9px; padding: 8px 10px; }
     .bio-card-links { flex-direction: column; align-items: flex-start; gap: 14px; }
 
     /* First-six band */
@@ -1504,7 +1505,6 @@
     <div class="logo">After<span class="dot">.</span></div>
     <nav class="nav-links">
       <a href="#serum">The Serum</a>
-      <a href="#bundle">The Bundle</a>
       <a href="#about">About</a>
       <a href="#journal">Journal</a>
       <a href="#faq">FAQ</a>
@@ -1520,14 +1520,12 @@
     <div class="hero-grid">
       <div class="hero-text">
         <h1>The drug works.<br><em>The damage can be irreversible.</em></h1>
-        <p class="hero-lede">Ozempic, Wegovy, Mounjaro, Zepbound — the drug class of the decade does what it says. It also takes <strong style="color:var(--amber);font-style:normal;font-weight:700;">a hollow, gaunt, ten-years-older face</strong> within ninety days, and <strong style="color:var(--amber);font-style:normal;font-weight:700;">five kilograms of muscle a 58-year-old woman will not get back.</strong> The face change is the one in the mirror you cannot stop looking at. The muscle change is the one that ends in a fall. AFTER. is built so the body that arrives at the other side of the drug is one you would still want to be inside.</p>
+        <p class="hero-lede">Ozempic, Wegovy, Mounjaro, Zepbound — the drug class of the decade does what it says. It also takes <strong style="color:var(--amber);font-style:normal;font-weight:700;">a hollow, gaunt, ten-years-older face</strong> within ninety days. The face change is the one in the mirror you cannot stop looking at. AFTER. is built so the face that arrives at the other side of the drug is one you would still want to see.</p>
         <div class="cta-row">
-          <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the Serum · $129</a>
-          <a class="btn btn-outline" href="#bundle" data-open-product="bundle">Add the Bundle · $129/mo</a>
+          <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the Serum · $110</a>
         </div>
         <div class="hero-sub">
-          <div><div class="hero-sub-n">The Serum</div><div class="hero-sub-l">Eleven actives for the Ozempic-face pattern · 30 mL · $129</div></div>
-          <div><div class="hero-sub-n">The Bundle</div><div class="hero-sub-l">Type II hydrolyzed collagen + oral BPC-157 · 30-day supply · $129/mo</div></div>
+          <div><div class="hero-sub-n">The Serum</div><div class="hero-sub-l">Seven active clinical ingredients for the Ozempic-face pattern · 30 mL · $110</div></div>
         </div>
       </div>
       <div class="hero-img">
@@ -1538,7 +1536,7 @@
 
   <!-- The gap -->
   <section class="gap">
-    <h2>The GLP-1 works. <em>The side effects are devastating.</em><br>AFTER. exists for the two that hurt you most.</h2>
+    <h2>The GLP-1 works. <em>The side effects are devastating.</em><br>AFTER. exists for the one in the mirror you cannot stop seeing.</h2>
   </section>
 
   <!-- § 02 Biology — what GLP-1 actually does (moved up from §04) -->
@@ -1547,7 +1545,7 @@
       <div class="bio-card">
         <div class="bio-card-num">Mechanism 01 · Ozempic face</div>
         <h3>Fat-compartment lipolysis and dermal-signaling change.</h3>
-        <div class="muscle-slider">
+        <div class="compare-slider">
           <figure class="before">
             <img src="assets/face-volume-loss.jpg" alt="Anatomical cross-section of facial fat compartments — depleted, hollowed mid-face after rapid GLP-1 weight loss.">
             <figcaption><span>Before · volume loss</span> <span class="stat">−50–100 mL</span></figcaption>
@@ -1564,86 +1562,41 @@
           <button class="bio-learn" type="button" data-open-science="face">See the citations →</button>
         </div>
       </div>
-      <div class="bio-card">
-        <div class="bio-card-num">Mechanism 02 · Up to 40% lean muscle loss</div>
-        <h3>Rapid catabolic state, compounded by post-menopausal anabolic resistance.</h3>
-        <div class="muscle-slider">
-          <figure class="before">
-            <img src="assets/muscle-atrophy.jpg" alt="Cross-section of post-GLP-1 skeletal muscle — atrophied fibers, reduced density, diminished functional capacity.">
-            <figcaption><span>Before · muscle atrophy</span> <span class="stat">−40%</span></figcaption>
-          </figure>
-          <figure class="after">
-            <img src="assets/muscle-preserved.jpg" alt="Cross-section of muscle supported by collagen and BPC-157 stack — preserved fiber density and structural integrity.">
-            <figcaption><span>With the Bundle</span> <span class="stat">preserved</span></figcaption>
-          </figure>
-        </div>
-        <p>Twenty-five to forty percent of every pound lost on a GLP-1 is <strong>lean muscle</strong> (Karakasis 2024 meta-analysis). Baseline post-menopausal muscle loss already runs three to eight percent per decade; GLP-1 therapy layers additional acceleration on top. For a 58-year-old woman losing 20 kg, roughly five kg of muscle — five to seven years of normal decline compressed into twelve months.</p>
-        <div class="consequence">This is not about opening a jar. Lean muscle in your fifties and sixties is the single strongest predictor of <strong>how long you live a healthy life</strong> — how many years you stay out of a wheelchair, how likely you are to fall and fracture a hip, whether you make it to eighty walking on your own. The lower lean-mass quartile at 55 doubles the risk of a fall, a fracture, an assisted-living facility — <strong>years earlier than it had to be.</strong></div>
-        <div class="bio-card-links">
-          <a class="bio-more" href="#bundle" data-open-product="bundle">See the Bundle ingredient panel →</a>
-          <button class="bio-learn" type="button" data-open-science="muscle">See the citations →</button>
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- v2 · First six months urgency band -->
   <section class="first-six">
-    <h2>The first six months on a GLP-1 are when most of both losses happen.</h2>
-    <p>Begin AFTER. now and you preserve what you have. Begin in month seven and you are working from a deficit that, on the face, may need a filler to undo. <strong>And in the muscle, past menopause, is largely unrecoverable.</strong> The lean tissue you walk in with is the lean tissue you walk out with. There is no second window.</p>
+    <h2>The first six months on a GLP-1 are when most of the volume change happens.</h2>
+    <p>Begin AFTER. now and you preserve what you have. Begin in month seven and you are working from a deficit that may need a filler to undo. <strong>The window is short.</strong> The mid-face you walk in with is the mid-face the drug works against the fastest.</p>
   </section>
 
   <!-- § 02 Product rail A — Serum -->
   <section class="rail">
-    <div class="rail-img"><img src="assets/serum-rail.jpg" alt="AFTER. serum — amber glass dropper, cream paper packaging, warm afternoon light."></div>
+    <div class="rail-img"><img src="assets/serum-rail.jpg" alt="AFTER. serum — frosted glass bottle, cream paper packaging, warm afternoon light."></div>
     <div class="rail-body">
       <h2>For the face<br><em>in the mirror.</em></h2>
-      <p class="rail-lede">Eleven clinical actives, formulated for the specific skin pattern that GLP-1 medications produce: volume loss underneath, elasticity change above, compressed timeline. Four drops, morning and evening.</p>
+      <p class="rail-lede">Seven active clinical ingredients, formulated for the specific skin pattern that GLP-1 medications produce: volume loss underneath, elasticity change above, compressed timeline. One to two drops, morning or evening.</p>
       <ul class="rail-pulls">
         <li>
           <div class="rail-pull-name">Matrixyl 3000</div>
-          <div class="rail-pull-desc">Three pathways into fibroblast collagen synthesis — the only thing that thickens dermis from underneath.</div>
+          <div class="rail-pull-desc">Palmitoyl Tripeptide-1 + Palmitoyl Tetrapeptide-7. Stimulates fibroblast collagen and elastin synthesis — the pathway that thickens dermis from underneath.</div>
         </li>
         <li>
-          <div class="rail-pull-name">GHK-Cu</div>
-          <div class="rail-pull-desc">Copper tripeptide for the firmness-signaling pathway in the mid-face and jaw.</div>
+          <div class="rail-pull-name">Matrixyl Synthe'6</div>
+          <div class="rail-pull-desc">Palmitoyl Tripeptide-38. Stimulates six dermal-matrix proteins to reduce wrinkle depth and smooth the surface above.</div>
         </li>
         <li>
-          <div class="rail-pull-name">Granactive Retinoid</div>
-          <div class="rail-pull-desc">The retinoid pathway without the irritation of tretinoin — no prescription required.</div>
+          <div class="rail-pull-name">Centella + Kakadu Plum + Bearberry + Licorice</div>
+          <div class="rail-pull-desc">Four plant actives behind the peptides: Centella for collagen support, Kakadu Plum (the highest natural source of vitamin C) for antioxidant defence, Bearberry and Licorice for tone and brightness.</div>
         </li>
       </ul>
-      <div class="rail-price">$129 <span class="rail-price-sub">30 mL · 60-day supply</span></div>
+      <div class="rail-price">$110 <span class="rail-price-sub">30 mL · 1 fl. oz.</span></div>
       <div class="rail-ctas">
         <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the Serum →</a>
         <a class="rail-link" href="#serum" data-open-product="serum">Read the full ingredient panel →</a>
       </div>
-      <p class="disclaimer">Fragrance-free · phthalate-free · cruelty-free · pH 5.5 · no prescription required</p>
-    </div>
-  </section>
-
-  <!-- § 03 Product rail B — The Bundle -->
-  <section class="rail reverse" id="bundle">
-    <div class="rail-img"><img src="assets/bundle-rail.jpg" alt="AFTER. Bundle — Type II hydrolyzed collagen tub and amber-glass BPC-157 capsule bottle on warm linen."></div>
-    <div class="rail-body">
-      <h2>For the muscle<br><em>you feel.</em></h2>
-      <p class="rail-lede">At fifty-eight, five kilograms of muscle is the difference between walking unassisted at eighty and a walker at seventy — between staying out of a wheelchair and a hip you fracture in your own kitchen. The Bundle — Type II hydrolyzed collagen and oral BPC-157 capsules, paired with protein and resistance training — is built to keep that muscle and connective tissue while the weight goes.</p>
-      <ul class="rail-pulls">
-        <li>
-          <div class="rail-pull-name">Type II hydrolyzed collagen</div>
-          <div class="rail-pull-desc">12 grams per day of clinically dosed Type II hydrolyzed collagen — Grade A evidence for joint, skin, and connective-tissue support. The substrate the body uses to rebuild what GLP-1 weight loss draws down.</div>
-        </li>
-        <li>
-          <div class="rail-pull-name">BPC-157 (oral capsule)</div>
-          <div class="rail-pull-desc">Pharmaceutical-grade BPC-157 in an oral capsule, dosed daily. Grade C evidence for tissue-repair support; we are honest that the human RCT base is thin and the case is mechanistic + animal-model led.</div>
-        </li>
-      </ul>
-      <div class="rail-price">$129/mo <span class="rail-price-sub">30-day supply · ships in 48 hours · cancel anytime</span></div>
-      <div class="rail-ctas">
-        <a class="btn btn-dark" href="#bundle" data-open-product="bundle">Add the Bundle →</a>
-        <a class="rail-link" href="#bundle" data-open-product="bundle">Read the full ingredient panel →</a>
-      </div>
-      <p class="disclaimer">Consumer dietary supplement · not evaluated by the FDA · not intended to diagnose, treat, cure, or prevent any disease · discuss with your physician before adding to your regimen</p>
+      <p class="disclaimer">Vegan · cruelty-free · paraben-free · made in Australia · no prescription required</p>
     </div>
   </section>
 
@@ -1651,40 +1604,10 @@
   <section class="voices">
     <div class="voices-head">
       <h2>This isn't AFTER. saying it.<br><em>This is the field saying it.</em></h2>
-      <p>Six of the most-listened-to voices in longevity, women's health, dermatology, and endocrinology — on the record about what GLP-1s do to the face and the muscle. Verbatim, with sources. We chose them; we did not pay them.</p>
+      <p>The most-listened-to voices in longevity, women's health, dermatology, and endocrinology — on the record about what GLP-1s do to the face. Verbatim, with sources. We chose them; we did not pay them.</p>
     </div>
 
     <div class="voices-grid">
-
-      <article class="voice-card">
-        <div class="topic">On muscle loss</div>
-        <blockquote>With the use of GLP-1s, we are able to accelerate muscle loss in weeks that would normally take twenty years.</blockquote>
-        <div class="by">
-          <span class="by-name">Dr. Gabrielle Lyon</span>
-          <span class="by-cred">Founder of Muscle-Centric Medicine. Author, <em>Forever Strong</em>.</span>
-          <span class="by-source">Source: clinical guidance and interviews on lean-mass loss with GLP-1 agonists.</span>
-        </div>
-      </article>
-
-      <article class="voice-card">
-        <div class="topic">On muscle loss</div>
-        <blockquote>The potential benefits of fat loss among healthy-weight individuals are minimal and are unlikely to offset the sizable health risks associated with reduced lean mass.</blockquote>
-        <div class="by">
-          <span class="by-name">Dr. Peter Attia</span>
-          <span class="by-cred">Longevity physician. Author, <em>Outlive</em>. Host, <em>The Drive</em>.</span>
-          <span class="by-source">Source: <a href="https://peterattiamd.com/the-downside-of-glp-1-receptor-agonists/" target="_blank" rel="noopener">peterattiamd.com — The Downside of GLP-1 Receptor Agonists</a></span>
-        </div>
-      </article>
-
-      <article class="voice-card">
-        <div class="topic">On older women specifically</div>
-        <blockquote>Older adults and women may be more likely to lose muscle on semaglutide, but eating more protein may help protect against this. Losing too much muscle may reduce the benefits of semaglutide on blood sugar control.</blockquote>
-        <div class="by">
-          <span class="by-name">Dr. Melanie Haines</span>
-          <span class="by-cred">Endocrinologist, Massachusetts General Hospital.</span>
-          <span class="by-source">Source: <a href="https://www.endocrine.org/news-and-advocacy/news-room/endo-annual-meeting/endo-2025-press-releases/haines-press-release" target="_blank" rel="noopener">Endocrine Society, ENDO 2025 press release</a></span>
-        </div>
-      </article>
 
       <article class="voice-card">
         <div class="topic">On Ozempic face</div>
@@ -1706,28 +1629,13 @@
         </div>
       </article>
 
-      <article class="voice-card">
-        <div class="topic">On muscle as the engine</div>
-        <blockquote>Muscle is the engine of your metabolism. Maintaining and building it is non-negotiable for women on or after a GLP-1 — without it, the long-term outcome is worse than the day you started.</blockquote>
-        <div class="by">
-          <span class="by-name">Dr. Mary Claire Haver</span>
-          <span class="by-cred">Menopause physician. Author, <em>The New Menopause</em>.</span>
-          <span class="by-source">Source: <a href="https://thepauselife.com/blogs/the-pause-blog/muscle-metabolism-and-mindset-the-truth-about-long-term-use-of-glp-1s" target="_blank" rel="noopener">The Pause Life — Muscle, Metabolism, and Mindset</a></span>
-        </div>
-      </article>
-
     </div>
 
     <div class="voices-stats">
       <div class="voices-stat">
-        <div class="figure">39–40%</div>
-        <div class="label">of total weight lost on semaglutide is lean mass — muscle, bone, organ tissue, not fat. Per DEXA body composition analysis from the pivotal STEP-1 trial.</div>
-        <div class="src">Source: <a href="https://peterattiamd.com/the-downside-of-glp-1-receptor-agonists/" target="_blank" rel="noopener">STEP-1 trial via Peter Attia analysis</a></div>
-      </div>
-      <div class="voices-stat">
-        <div class="figure">2×</div>
-        <div class="label">the rate of muscle loss for women over 55 vs. younger adults on the same GLP-1 protocol — and protein intake explained much of the difference.</div>
-        <div class="src">Source: <a href="https://www.endocrine.org/news-and-advocacy/news-room/endo-annual-meeting/endo-2025-press-releases/haines-press-release" target="_blank" rel="noopener">Mass General Hospital, ENDO 2025</a></div>
+        <div class="figure">9–16 wks</div>
+        <div class="label">the window in which the Ozempic-face pattern compresses — fat-compartment volume loss plus dermal-signaling change, distinct from age-related thinning.</div>
+        <div class="src">Source: Cotofana 2021, <em>Aesthetic Plastic Surgery</em>; Glogau 2023, <em>Dermatologic Surgery</em>.</div>
       </div>
       <div class="voices-stat">
         <div class="figure">$5,000+</div>
@@ -1743,13 +1651,11 @@
     <div class="founder-body">
       <h2>Sometimes the most credible response to a gap is to <em>close it yourself.</em></h2>
       <div class="founder-prose">
-        <p class="lossy-intro">If you do nothing — no Serum, no Bundle, just the GLP-1 — here is what does <em>not</em> happen.</p>
+        <p class="lossy-intro">If you do nothing — no Serum, just the GLP-1 — here is what does <em>not</em> happen.</p>
         <ul class="lossy-list">
           <li><span class="lossy-num">01</span><div><strong>The mid-face does not stay.</strong> Fifty to a hundred millilitres of fat-compartment volume disappears in the first ninety days. The cheekbones flatten. The nasolabial fold deepens. Friends ask quietly if you are okay.</div></li>
           <li><span class="lossy-num">02</span><div><strong>The jawline does not stay.</strong> Skin redundancy settles into jowls by month six. Photographs feel different to look at — and they do not look like that to anyone but you.</div></li>
-          <li><span class="lossy-num">03</span><div><strong>The muscle does not come back.</strong> Five kilograms of lean tissue gone in twelve months. After fifty-five, anabolic resistance means most of it is not recoverable — even with perfect protein and training.</div></li>
-          <li><span class="lossy-num">04</span><div><strong>The fall does not stay theoretical.</strong> Lower lean-mass quartile at 55 doubles the lifetime risk of a hip fracture. The hip fracture is the one that ends independent living for forty percent of women it happens to.</div></li>
-          <li><span class="lossy-num">05</span><div><strong>The years at the end do not return.</strong> Healthspan — the years lived unassisted — shortens with every kilogram of muscle the GLP-1 takes that you do not put back. Those years are the ones nobody warns you about until they are gone.</div></li>
+          <li><span class="lossy-num">03</span><div><strong>The window does not reopen.</strong> Most of the volume change compresses into the first six months on the drug. Begin in month seven and you are working from a deficit that, on the face, may need a filler to undo.</div></li>
         </ul>
         <p class="lossy-close">The drug works. <strong>The damage is the part nobody is selling you a solution to.</strong> AFTER. is.</p>
       </div>
@@ -1759,13 +1665,12 @@
   <!-- Final CTA -->
   <section class="cta">
     <p class="hero-tag">The volume returns. You return.</p>
-    <h2>Two harms.<br><em>One place to address them.</em></h2>
-    <p class="cta-lede">Whether you are two weeks from your first injection or seven months into your journey — AFTER. is the one place built specifically to mitigate the side effects worth worrying about: a topical serum for the face in the mirror, and a daily oral Bundle for the muscle that decides whether you walk into your seventies on your own two feet or roll into them in a wheelchair. Responsible, transparent about evidence, designed to sit alongside your existing care.</p>
+    <h2>The face you walk in with.<br><em>The face you walk out with.</em></h2>
+    <p class="cta-lede">Whether you are two weeks from your first injection or seven months into your journey — AFTER. is built specifically for the side effect worth worrying about: rapid facial volume loss on GLP-1. A topical peptide serum with seven active clinical ingredients, designed for the Ozempic-face pattern. Responsible, transparent about evidence, designed to sit alongside your existing care.</p>
     <div class="cta-row-dual">
-      <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the Serum · $129</a>
-      <a class="btn btn-outline" href="#bundle" data-open-product="bundle">Add the Bundle · $129/mo</a>
+      <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the Serum · $110</a>
     </div>
-    <div class="cta-sub">Ships in 48 hours · 60-day returns on the Serum · cancel the Bundle anytime · ingredient panels shareable with your physician</div>
+    <div class="cta-sub">Ships in 48 hours · 60-day returns · ingredient panel shareable with your physician</div>
   </section>
 
   <!-- Footer -->
@@ -1773,12 +1678,11 @@
     <div class="foot-grid">
       <div>
         <div class="foot-logo">After<span class="dot">.</span></div>
-        <p class="foot-tag">The one place to mitigate the side effects of GLP-1 medications. A topical peptide serum for the face, and a daily oral Bundle (collagen + BPC-157) for the muscle — for women 50–65 on Ozempic, Wegovy, Mounjaro or Zepbound.</p>
+        <p class="foot-tag">A topical peptide serum with seven active clinical ingredients, formulated for the Ozempic-face pattern — for women 50–65 on Ozempic, Wegovy, Mounjaro or Zepbound.</p>
       </div>
       <div class="foot-col">
         <div class="pill">Shop</div>
         <div class="foot-link">The Serum</div>
-        <div class="foot-link">The Bundle</div>
         <div class="foot-link">Subscribe</div>
         <div class="foot-link">Refer a friend</div>
       </div>
@@ -1799,10 +1703,7 @@
     </div>
     <div class="foot-legal">
       <span style="line-height:1.7;">
-        <strong>The Serum:</strong> Not evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease. Fragrance-free · phthalate-free · cruelty-free · pH 5.5 · no prescription required.
-      </span>
-      <span style="line-height:1.7;">
-        <strong>The Bundle:</strong> AFTER. Bundle is a consumer dietary supplement consisting of Type II hydrolyzed collagen and oral BPC-157 capsules. Not evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease. Type II hydrolyzed collagen has Grade A evidence for joint, skin, and connective-tissue support at 10–15 g/day. Oral BPC-157 has Grade C evidence — primarily mechanistic and animal-model data; the human RCT base is thin and we name that openly. Manufactured in a cGMP-certified facility. Independently assayed for identity, potency, and contaminants. Discuss with your physician before adding to your regimen, especially if you take other medications or have a chronic condition. Most meaningful alongside adequate protein intake (1.2–1.6 g/kg) and resistance training. Individual response varies.
+        <strong>The Serum:</strong> AFTER. The Serum is a topical cosmetic product with seven active clinical ingredients (Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7, Palmitoyl Tripeptide-38, Bearberry leaf extract, Centella Asiatica, Kakadu Plum, Licorice root). Not evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease. Vegan · cruelty-free · paraben-free · made in Australia · no prescription required. Discuss with your physician if pregnant, nursing, or under medical care. Discontinue if irritation occurs. Individual response varies.
       </span>
       <span class="row-sm">
         <span>© MMXXVI After Laboratories, Inc.</span>
@@ -1830,7 +1731,7 @@
       <span data-cart-subtotal>$0</span>
     </div>
     <button class="cart-checkout" data-open-checkout disabled>Checkout</button>
-    <p class="micro">Ships in 48 hours · 60-day returns on the Serum · cancel the Bundle anytime</p>
+    <p class="micro">Ships in 48 hours · 60-day returns on the Serum</p>
   </div>
 </aside>
 
@@ -1856,7 +1757,7 @@
   <button class="checkout-close" data-close-checkout aria-label="Close">×</button>
   <div data-checkout-form-wrap>
     <h2>Checkout</h2>
-    <p class="sub">Order ships within 48 hours from Portland.</p>
+    <p class="sub">Order ships within 48 hours.</p>
     <form class="checkout-form" data-checkout-form>
       <label>Email</label>
       <input type="email" required name="email" placeholder="you@example.com">
@@ -1916,25 +1817,6 @@
 
   </div>
 
-  <div class="science-panel" data-science-panel="muscle">
-    <div class="pill">Mechanism 02 · Citations</div>
-    <h2>What we cite for the <em>muscle-loss</em> mechanism, and for the Bundle.</h2>
-
-    <h3>Evidence on the problem (GLP-1-induced lean-mass loss)</h3>
-    <ul>
-      <li><strong>Karakasis P et al., 2024.</strong> <em>Effects of GLP-1 receptor agonists on body composition: a meta-analysis of 22 RCTs.</em> Source for the 25–40% lean-mass-loss figure.</li>
-      <li><strong>Wilding JPH et al., 2021.</strong> STEP-1 / SURMOUNT-1 substudies — DEXA body composition, lean vs. fat partitioning under semaglutide and tirzepatide.</li>
-      <li><strong>Goisser S et al., 2015.</strong> <em>Sarcopenia and risk of incident disability in older adults.</em> Source for lean-mass-quartile mortality and fall-risk figures.</li>
-      <li><strong>Mitchell WK et al., 2012.</strong> <em>Sarcopenia, dynapenia, and the impact of advancing age on human skeletal muscle composition and function.</em> Source for the post-menopausal anabolic-resistance baseline.</li>
-    </ul>
-
-    <h3>Evidence on the Bundle ingredients</h3>
-    <ul>
-      <li><strong>Zdzieblik D et al., 2015.</strong> <em>Collagen peptide supplementation in combination with resistance training improves body composition and increases muscle strength in elderly sarcopenic men.</em> British Journal of Nutrition. The strongest direct evidence for hydrolyzed collagen plus resistance training as a lean-mass-preservation stack.</li>
-      <li><strong>Lugo JP et al., 2013.</strong> <em>Undenatured Type II collagen for joint comfort and function.</em> Nutrition Journal. Background on Type II collagen.</li>
-      <li><strong>Sikiric P et al., 2018.</strong> <em>Stable gastric pentadecapeptide BPC 157 — a review.</em> Current Pharmaceutical Design. The most-cited review on BPC-157 for tissue repair, gut, and connective tissue.</li>
-    </ul>
-
   </div>
 </div>
 
@@ -1944,42 +1826,24 @@
     serum: {
       title: 'AFTER. <em>The Serum.</em>',
       pill: 'For the face in the mirror',
-      price: '$129',
-      priceVal: 129,
-      freq: ' · 30 mL · 60-day supply',
+      price: '$110',
+      priceVal: 110,
+      freq: ' · 30 mL · 1 fl. oz.',
       img: 'assets/serum-detail.jpg',
-      desc: 'Eleven peptide actives at clinical concentration in a peptide-stable vehicle. Built for the four facial tissues GLP-1 weight loss draws down first — the deep medial cheek, the buccal pad, the tear trough, the jawline. Apply four drops, morning and night. Re-evaluate at sixty days.',
+      desc: 'Seven active clinical ingredients — three peptides (Matrixyl 3000 and Matrixyl Synthe’6) plus four plant actives (Centella, Kakadu Plum, Bearberry, Licorice) — formulated for the Ozempic-face pattern. Apply 1–2 drops to clean skin, morning or evening. Suitable for AM or PM use.',
       specs: [
-        ['Format', '30 mL amber-glass dropper bottle'],
-        ['Routine', '4 drops AM and PM'],
-        ['Supply', '60 days per bottle'],
-        ['pH', '5.5'],
-        ['Free of', 'Fragrance, phthalates, parabens'],
-        ['Made in', 'Portland, OR · independent lab'],
+        ['Format', '30 mL frosted-glass bottle'],
+        ['Routine', '1–2 drops, AM or PM'],
+        ['Active ingredients', 'Seven, named on the panel'],
+        ['Free of', 'Parabens, sulfates · cruelty-free · vegan'],
+        ['Made in', 'Australia'],
+        ['Shelf life', '12 months after opening'],
       ],
-      micro: 'Not evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease.',
-    },
-    bundle: {
-      title: 'AFTER. <em>The Bundle.</em>',
-      pill: 'For the muscle you feel',
-      price: '$129',
-      priceVal: 129,
-      freq: ' / mo · 30-day supply',
-      img: 'assets/bundle-detail.jpg',
-      desc: 'A daily oral stack of two ingredients with named clinical literature: 12 g of Type II hydrolyzed collagen for connective tissue and skin, and a daily oral capsule of pharmaceutical-grade BPC-157 for tissue-repair support. Independently assayed every lot. Discuss with your physician before adding to your regimen.',
-      specs: [
-        ['Format', 'Powder tub + amber-glass capsule bottle'],
-        ['Daily dose', '12 g collagen · 1 daily capsule'],
-        ['Supply', '30 days'],
-        ['Manufacturing', 'cGMP-certified facility'],
-        ['Verification', 'Eurofins third-party assay every lot'],
-        ['Cancel', 'Anytime · no fees'],
-      ],
-      micro: 'Dietary supplement. Not evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease. Discuss with your physician before adding to your regimen.',
+      micro: 'Not evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease. Discontinue if irritation occurs.',
     },
   };
 
-  const STORAGE_KEY = 'after-bundle-cart';
+  const STORAGE_KEY = 'after-serum-cart';
   let cart = {};
 
   // ---- DOM refs ----
