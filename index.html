@@ -160,9 +160,12 @@
   .rail-pull-desc { font-size: 14px; line-height: 1.55; color: var(--muted); }
   .rail-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
   .rail-price {
-    font-family: var(--serif); font-size: 32px; font-weight: 500; margin: 0 0 16px;
+    font-family: var(--serif); font-size: 32px; font-weight: 500; margin: 0 0 6px;
   }
   .rail-price-sub { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-left: 12px; }
+  .rail-price-meta { font-size: 13px; color: var(--ink); margin: 0 0 6px; line-height: 1.5; }
+  .rail-price-meta strong { font-weight: 600; }
+  .rail-price-offer { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); margin: 0 0 18px; }
   .rail-link {
     font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
     color: var(--amber); padding: 18px 0; border-bottom: 1px solid var(--amber);
@@ -1522,10 +1525,10 @@
         <h1>The drug works.<br><em>The damage can be irreversible.</em></h1>
         <p class="hero-lede">Ozempic, Wegovy, Mounjaro, Zepbound — the drug class of the decade does what it says. It also takes <strong style="color:var(--amber);font-style:normal;font-weight:700;">a hollow, gaunt, ten-years-older face</strong> within ninety days. The face change is the one in the mirror you cannot stop looking at. AFTER. is built so the face that arrives at the other side of the drug is one you would still want to see.</p>
         <div class="cta-row">
-          <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the Serum · $110</a>
+          <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the Serum · $129</a>
         </div>
         <div class="hero-sub">
-          <div><div class="hero-sub-n">The Serum</div><div class="hero-sub-l">Seven active clinical ingredients for the Ozempic-face pattern · 30 mL · $110</div></div>
+          <div><div class="hero-sub-n">About $2 a day.</div><div class="hero-sub-l">Seven active clinical ingredients for the Ozempic-face pattern. 30 mL bottle, a 60-day supply at the recommended use rate. $129 the bottle, $109 your first one, $116 if you subscribe. Less than a single Ozempic injection costs you for the rest of your face.</div></div>
         </div>
       </div>
       <div class="hero-img">
@@ -1591,7 +1594,9 @@
           <div class="rail-pull-desc">Four plant actives behind the peptides: Centella for collagen support, Kakadu Plum (the highest natural source of vitamin C) for antioxidant defence, Bearberry and Licorice for tone and brightness.</div>
         </li>
       </ul>
-      <div class="rail-price">$110 <span class="rail-price-sub">30 mL · 1 fl. oz.</span></div>
+      <div class="rail-price">$129 <span class="rail-price-sub">30 mL · 60-day supply</span></div>
+      <p class="rail-price-meta">That works out to <strong>about $2 a day</strong> to keep the face you walk in with. Less than your morning coffee. A rounding error on the cost of the drug itself.</p>
+      <p class="rail-price-offer">$20 off your first bottle · subscribe and save 10 percent</p>
       <div class="rail-ctas">
         <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the Serum →</a>
         <a class="rail-link" href="#serum" data-open-product="serum">Read the full ingredient panel →</a>
@@ -1668,9 +1673,9 @@
     <h2>The face you walk in with.<br><em>The face you walk out with.</em></h2>
     <p class="cta-lede">Whether you are two weeks from your first injection or seven months into your journey — AFTER. is built specifically for the side effect worth worrying about: rapid facial volume loss on GLP-1. A topical peptide serum with seven active clinical ingredients, designed for the Ozempic-face pattern. Responsible, transparent about evidence, designed to sit alongside your existing care.</p>
     <div class="cta-row-dual">
-      <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the Serum · $110</a>
+      <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the Serum · $129</a>
     </div>
-    <div class="cta-sub">Ships in 48 hours · 60-day returns · ingredient panel shareable with your physician</div>
+    <div class="cta-sub">$129 the bottle, about $2 a day for 60 days · $20 off your first bottle · subscribe and save 10 percent · ships in 48 hours · 60-day returns</div>
   </section>
 
   <!-- Footer -->
@@ -1826,11 +1831,11 @@
     serum: {
       title: 'AFTER. <em>The Serum.</em>',
       pill: 'For the face in the mirror',
-      price: '$110',
-      priceVal: 110,
-      freq: ' · 30 mL · 1 fl. oz.',
+      price: '$129',
+      priceVal: 129,
+      freq: ' · 30 mL · 60-day supply · about $2 a day · $20 off your first bottle · subscribe and save 10 percent',
       img: 'assets/serum-detail.jpg',
-      desc: 'Seven active clinical ingredients — three peptides (Matrixyl 3000 and Matrixyl Synthe’6) plus four plant actives (Centella, Kakadu Plum, Bearberry, Licorice) — formulated for the Ozempic-face pattern. Apply 1–2 drops to clean skin, morning or evening. Suitable for AM or PM use.',
+      desc: 'Seven active clinical ingredients. Three peptides (Matrixyl 3000 and Matrixyl Synthe’6) plus four plant actives (Centella, Kakadu Plum, Bearberry, Licorice), formulated for the Ozempic-face pattern. Apply 1 to 2 drops to clean skin, morning or evening. Suitable for AM or PM use.',
       specs: [
         ['Format', '30 mL frosted-glass bottle'],
         ['Routine', '1–2 drops, AM or PM'],
