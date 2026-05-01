@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>AFTER. — For women on GLP-1.</title>
+<title>AFTER. For women on GLP-1.</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="AFTER. is for women 50–65 on Ozempic, Wegovy, Mounjaro or Zepbound. A topical peptide serum with seven active clinical ingredients for the Ozempic-face pattern.">
+<meta name="description" content="AFTER. is the side-effect line for women on Ozempic, Wegovy, Mounjaro or Zepbound. Four products for the four side effects nobody is selling you a solution to: face volume loss, nutrient depletion, hair thinning, and nausea.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -184,12 +184,18 @@
   .gap { border-bottom: none; padding-bottom: 72px; }
   .bio-mech {
     display: grid; grid-template-columns: 1fr; gap: 32px;
-    max-width: 720px; margin: 0 auto;
+    max-width: 1080px; margin: 0 auto;
   }
   .bio-card {
     padding: 48px 44px; background: var(--bg);
     border-left: 2px solid var(--amber);
   }
+  .bio-card-img {
+    width: 100%; height: 280px; object-fit: cover;
+    margin: 4px 0 24px; display: block;
+  }
+  .bio-card.simple { padding-bottom: 36px; }
+  .bio-card.simple p { font-size: 15px; line-height: 1.65; }
   .bio-card-num {
     font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
     color: var(--amber); margin-bottom: 18px;
@@ -247,6 +253,13 @@
   .founder-body h2 em { color: var(--amber); font-style: italic; }
   .founder-prose p {
     font-size: 15px; line-height: 1.7; color: var(--ink); margin: 0 0 18px;
+  }
+  .founder-tribute {
+    font-family: var(--serif); font-size: 17px; line-height: 1.55;
+    font-style: italic; color: var(--muted);
+    border-left: 2px solid var(--amber);
+    padding: 6px 0 6px 20px;
+    margin: 0 0 32px;
   }
   .founder-prose .pullquote {
     font-family: var(--serif); font-size: 22px; line-height: 1.4;
@@ -1507,9 +1520,11 @@
   <header class="nav">
     <div class="logo">After<span class="dot">.</span></div>
     <nav class="nav-links">
-      <a href="#serum">The Serum</a>
+      <a href="#serum">Serum</a>
+      <a href="#daily">Daily</a>
+      <a href="#roots">Roots</a>
+      <a href="#calm">Calm</a>
       <a href="#about">About</a>
-      <a href="#journal">Journal</a>
       <a href="#faq">FAQ</a>
     </nav>
     <div class="nav-right">
@@ -1522,13 +1537,14 @@
   <section class="hero">
     <div class="hero-grid">
       <div class="hero-text">
-        <h1>The drug works.<br><em>The damage can be irreversible.</em></h1>
-        <p class="hero-lede">Ozempic, Wegovy, Mounjaro, Zepbound — the drug class of the decade does what it says. It also takes <strong style="color:var(--amber);font-style:normal;font-weight:700;">a hollow, gaunt, ten-years-older face</strong> within ninety days. The face change is the one in the mirror you cannot stop looking at. AFTER. is built so the face that arrives at the other side of the drug is one you would still want to see.</p>
+        <h1>The drug works.<br><em>The side effects don't take care of themselves.</em></h1>
+        <p class="hero-lede">Ozempic, Wegovy, Mounjaro, Zepbound. The drug class of the decade does what it says. It also takes <strong style="color:var(--amber);font-style:normal;font-weight:700;">a hollow face, depleted labs, thinning hair, and a stomach that turns on you</strong> in the first three months. AFTER. is the four-product line built specifically for the four side effects nobody is selling you a solution to.</p>
         <div class="cta-row">
-          <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the Serum · $129</a>
+          <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the line</a>
+          <a class="btn btn-dark" href="#serum" data-open-product="serum" style="background:transparent;color:var(--ink);border:1px solid var(--ink);">The Serum · $129</a>
         </div>
         <div class="hero-sub">
-          <div><div class="hero-sub-n">About $2 a day.</div><div class="hero-sub-l">Seven active clinical ingredients for the Ozempic-face pattern. 30 mL bottle, a 60-day supply at the recommended use rate. $129 the bottle, $109 your first one, $116 if you subscribe. Less than a single Ozempic injection costs you for the rest of your face.</div></div>
+          <div><div class="hero-sub-n">Four products. One drug. One body.</div><div class="hero-sub-l">The Serum for the face the drug hollows out. Daily for the lab values it quietly depletes. Roots for the hair that goes thin in month four. Calm for the nausea that hits in week one. Each works on its own. Together they cover the side-effect surface area of the drug, for the price of about three injections a year.</div></div>
         </div>
       </div>
       <div class="hero-img">
@@ -1539,12 +1555,13 @@
 
   <!-- The gap -->
   <section class="gap">
-    <h2>The GLP-1 works. <em>The side effects are devastating.</em><br>AFTER. exists for the one in the mirror you cannot stop seeing.</h2>
+    <h2>The GLP-1 works. <em>The side effects are devastating.</em><br>AFTER. exists for the four nobody is treating.</h2>
   </section>
 
-  <!-- § 02 Biology — what GLP-1 actually does (moved up from §04) -->
+  <!-- § 02 Biology — what GLP-1 actually does to four systems -->
   <section class="bio-short">
     <div class="bio-mech">
+
       <div class="bio-card">
         <div class="bio-card-num">Mechanism 01 · Ozempic face</div>
         <h3>Fat-compartment lipolysis and dermal-signaling change.</h3>
@@ -1558,13 +1575,50 @@
             <figcaption><span>With the Serum</span> <span class="stat">preserved</span></figcaption>
           </figure>
         </div>
-        <p>Fifty to one hundred millilitres of facial fat compartment volume disappears as the body draws down its stores. In parallel, GLP-1 receptor activation on dermal fibroblasts impairs collagen and elastin synthesis — independent of the weight loss itself. The pattern is distinct from age-related thinning, and it compresses into nine to sixteen weeks.</p>
+        <p>Fifty to one hundred millilitres of facial fat compartment volume disappears as the body draws down its stores. In parallel, GLP-1 receptor activation on dermal fibroblasts impairs collagen and elastin synthesis, independent of the weight loss itself. The pattern is distinct from age-related thinning, and it compresses into nine to sixteen weeks.</p>
         <div class="consequence">What you see in the mirror at month four: a hollowed mid-face, deepened nasolabial folds, a jawline that has softened, and the look of a face that has aged ten years in twelve weeks. <strong>Filler is the only intervention once the volume is gone.</strong></div>
         <div class="bio-card-links">
           <a class="bio-more" href="#serum" data-open-product="serum">See the Serum ingredient panel →</a>
           <button class="bio-learn" type="button" data-open-science="face">See the citations →</button>
         </div>
       </div>
+
+      <div class="bio-card simple">
+        <div class="bio-card-num">Mechanism 02 · Nutrient depletion</div>
+        <h3>The lab values nobody is monitoring.</h3>
+        <img class="bio-card-img" src="assets/nutrient-mech.jpg" alt="Botanical illustration triptych: an iron-rich seed pod, a branching root system, and a honeycomb mineral lattice — depicting the building blocks the body draws down on a GLP-1.">
+        <p>The drug works by blunting appetite. The follow-on is mechanical: smaller meals, slower gastric emptying, narrower food variety. Twenty-two percent of GLP-1 users develop a measurable nutrient deficiency by month twelve. B12, iron, vitamin D, and calcium are the four that move first. Sixty to seventy percent of users fall below the recommended intake for calcium alone.</p>
+        <div class="consequence">What you do not see in the mirror, but what the bloodwork would say: ferritin under thirty, B12 trending toward two hundred, vitamin D in the low-twenties. The downstream of those numbers is what shows up in the mirror as <strong>hair, skin, fatigue, and recovery.</strong></div>
+        <div class="bio-card-links">
+          <a class="bio-more" href="#daily" data-open-product="daily">See the Daily ingredient panel →</a>
+          <button class="bio-learn" type="button" data-open-science="nutrient">See the citations →</button>
+        </div>
+      </div>
+
+      <div class="bio-card simple">
+        <div class="bio-card-num">Mechanism 03 · Hair thinning</div>
+        <h3>Telogen effluvium follows rapid weight loss like clockwork.</h3>
+        <img class="bio-card-img" src="assets/roots-mech.jpg" alt="Botanical comparison illustration: a sparse spindly plant with thin roots beside a dense, leafed plant with a robust root system — the visual metaphor for hair-follicle density before and after support.">
+        <p>The body reads rapid weight loss as a stress and pulls follicles out of the active growth phase into the resting phase. Three to six months later the rested follicles shed in a single wave. Insurance-claims data on 187,400 GLP-1 users finds a 1.76-fold increase in telogen effluvium over matched controls. Iron, vitamin D, and zinc deficiencies make the wave larger and the regrowth slower.</p>
+        <div class="consequence">What you find on the pillow and in the brush from month four onward: a noticeable shed that does not slow until you address what triggered it. Biotin is the wrong answer. <strong>The deficiencies driving the shed are the right one.</strong></div>
+        <div class="bio-card-links">
+          <a class="bio-more" href="#roots" data-open-product="roots">See the Roots ingredient panel →</a>
+          <button class="bio-learn" type="button" data-open-science="roots">See the citations →</button>
+        </div>
+      </div>
+
+      <div class="bio-card simple">
+        <div class="bio-card-num">Mechanism 04 · Nausea and the GI wave</div>
+        <h3>Delayed gastric emptying. The vagal nerve, on alert.</h3>
+        <img class="bio-card-img" src="assets/calm-mech.jpg" alt="Botanical illustration of a single ginger root with calm concentric ripple lines — the visual sense of GI nausea settling.">
+        <p>GLP-1 medications slow gastric emptying. That is the whole point of the drug for blood sugar; it is also the source of the nausea. In the STEP-1 trial, forty-four percent of semaglutide users reported nausea, peaking in weeks one to four of titration and at every dose increase. It is the single largest reason people quit before they get to the dose that works.</p>
+        <div class="consequence">What you feel in the first thirty days: a stomach that turns on you in week one, peaks in week three, and quiets by week eight if you titrate properly. Ginger, B6, and electrolyte replacement have evidence in adjacent populations. <strong>The window is short. The kit is timed for it.</strong></div>
+        <div class="bio-card-links">
+          <a class="bio-more" href="#calm" data-open-product="calm">See the Calm ingredient panel →</a>
+          <button class="bio-learn" type="button" data-open-science="calm">See the citations →</button>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -1575,7 +1629,7 @@
   </section>
 
   <!-- § 02 Product rail A — Serum -->
-  <section class="rail">
+  <section class="rail" id="serum">
     <div class="rail-img"><img src="assets/serum-rail.jpg" alt="AFTER. serum — frosted glass bottle, cream paper packaging, warm afternoon light."></div>
     <div class="rail-body">
       <h2>For the face<br><em>in the mirror.</em></h2>
@@ -1583,7 +1637,7 @@
       <ul class="rail-pulls">
         <li>
           <div class="rail-pull-name">Matrixyl 3000</div>
-          <div class="rail-pull-desc">Palmitoyl Tripeptide-1 + Palmitoyl Tetrapeptide-7. Stimulates fibroblast collagen and elastin synthesis — the pathway that thickens dermis from underneath.</div>
+          <div class="rail-pull-desc">Palmitoyl Tripeptide-1 + Palmitoyl Tetrapeptide-7. Stimulates fibroblast collagen and elastin synthesis: the pathway that thickens dermis from underneath.</div>
         </li>
         <li>
           <div class="rail-pull-name">Matrixyl Synthe'6</div>
@@ -1605,11 +1659,104 @@
     </div>
   </section>
 
+  <!-- § 02 Product rail B — Daily (Nutrient Stack) -->
+  <section class="rail reverse" id="daily">
+    <div class="rail-img"><img src="assets/daily-rail.jpg" alt="AFTER. Daily — amber-glass apothecary jar with a cream paper label reading 'AFTER · DAILY' on a travertine slab in warm window light."></div>
+    <div class="rail-body">
+      <h2>For the labs<br><em>nobody is checking.</em></h2>
+      <p class="rail-lede">A four-capsule daily designed for the four nutrient deficiencies that GLP-1s drive in twenty-two percent of users by month twelve. Methylated B12, vitamin D3 with K2, ferrous bisglycinate iron, zinc picolinate, magnesium glycinate. One bottle, one month.</p>
+      <ul class="rail-pulls">
+        <li>
+          <div class="rail-pull-name">B12 + iron</div>
+          <div class="rail-pull-desc">Methylcobalamin B12 (the active form) and ferrous bisglycinate iron. The two deficiencies the bloodwork moves on first when intake drops. Dosed for absorption, not just label numbers.</div>
+        </li>
+        <li>
+          <div class="rail-pull-name">D3 with K2</div>
+          <div class="rail-pull-desc">Vitamin D3 with K2 for bone, immune, and mood support. Sixty percent of GLP-1 users fall below sufficiency by month twelve. K2 directs calcium where it belongs.</div>
+        </li>
+        <li>
+          <div class="rail-pull-name">Zinc + magnesium</div>
+          <div class="rail-pull-desc">Zinc picolinate and magnesium glycinate, for skin and hair structure, sleep, and the muscle recovery that smaller meals make harder.</div>
+        </li>
+      </ul>
+      <div class="rail-price">$49 <span class="rail-price-sub">30-day supply · 4 capsules daily</span></div>
+      <p class="rail-price-meta">About <strong>$1.63 a day</strong> to keep your labs from quietly drifting. Pairs with a baseline blood draw at month one and again at month four.</p>
+      <p class="rail-price-offer">subscribe and save 15 percent · cancel any time</p>
+      <div class="rail-ctas">
+        <a class="btn btn-dark" href="#daily" data-open-product="daily">Shop Daily →</a>
+        <a class="rail-link" href="#daily" data-open-product="daily">Read the full ingredient panel →</a>
+      </div>
+      <p class="disclaimer">Third-party tested · vegan · gluten-free · dairy-free · no prescription required</p>
+    </div>
+  </section>
+
+  <!-- § 02 Product rail C — Roots (Hair Stack) -->
+  <section class="rail" id="roots">
+    <div class="rail-img"><img src="assets/roots-rail.jpg" alt="AFTER. Roots — amber-glass apothecary jar with a cream paper label reading 'AFTER · ROOTS' beside a small bundle of dried wheat stalks on travertine in warm window light."></div>
+    <div class="rail-body">
+      <h2>For the shed<br><em>that surprises you.</em></h2>
+      <p class="rail-lede">Three capsules daily for the telogen effluvium that follows rapid weight loss. Iron, vitamin D, zinc, dosed for the deficiencies the published data implicates, not biotin (which has zero RCTs in this pattern). Onset of shed in month four; addressable in month one.</p>
+      <ul class="rail-pulls">
+        <li>
+          <div class="rail-pull-name">Iron + vitamin D</div>
+          <div class="rail-pull-desc">Ferritin under thirty and vitamin D under twenty are the two values most consistently associated with telogen effluvium in dermatology literature. We dose to move both.</div>
+        </li>
+        <li>
+          <div class="rail-pull-name">Zinc + saw palmetto</div>
+          <div class="rail-pull-desc">Zinc picolinate for the structural side of the hair shaft. Saw palmetto for the androgenetic component (Shah 2024 finds the pattern in 1.64x the controls).</div>
+        </li>
+        <li>
+          <div class="rail-pull-name">Why not biotin</div>
+          <div class="rail-pull-desc">The biotin you see in every other category has no RCT support in this pattern, and at high doses it gives false-high TSH readings on thyroid panels. We left it out on purpose.</div>
+        </li>
+      </ul>
+      <div class="rail-price">$39 <span class="rail-price-sub">30-day supply · 3 capsules daily</span></div>
+      <p class="rail-price-meta">About <strong>$1.30 a day</strong>. Begin in month two, before the shed begins, for the cleanest result.</p>
+      <p class="rail-price-offer">subscribe and save 15 percent · cancel any time</p>
+      <div class="rail-ctas">
+        <a class="btn btn-dark" href="#roots" data-open-product="roots">Shop Roots →</a>
+        <a class="rail-link" href="#roots" data-open-product="roots">Read the full ingredient panel →</a>
+      </div>
+      <p class="disclaimer">Third-party tested · vegan · gluten-free · dairy-free · no prescription required</p>
+    </div>
+  </section>
+
+  <!-- § 02 Product rail D — Calm (Nausea Kit) -->
+  <section class="rail reverse" id="calm">
+    <div class="rail-img"><img src="assets/calm-rail.jpg" alt="AFTER. Calm — open cream paperboard kit-box reading 'AFTER · CALM' containing herbal sachets, a small frosted-glass jar, and an instruction card; dried lemon and fresh ginger root beside it on travertine."></div>
+    <div class="rail-body">
+      <h2>For the week<br><em>the stomach turns.</em></h2>
+      <p class="rail-lede">A 30-day starter kit timed for the first dose escalation. Ginger root capsules, vitamin B6, sugar-free electrolyte stick packs, and a one-page card on titration timing and red flags. Built so you do not quit before the dose works.</p>
+      <ul class="rail-pulls">
+        <li>
+          <div class="rail-pull-name">Ginger 1g daily</div>
+          <div class="rail-pull-desc">Standardised ginger root extract, dosed at one gram per day. The Cochrane review covers twenty-six RCTs in pregnancy and chemotherapy nausea, with a thirty to fifty percent reduction at this dose.</div>
+        </li>
+        <li>
+          <div class="rail-pull-name">Vitamin B6</div>
+          <div class="rail-pull-desc">Pyridoxine, the same B6 used in pregnancy nausea protocols. Adjacent population, same delayed-emptying mechanism. Adds when ginger plateaus.</div>
+        </li>
+        <li>
+          <div class="rail-pull-name">Electrolyte sticks</div>
+          <div class="rail-pull-desc">Sodium, potassium, magnesium without sugar. Smaller meals plus occasional vomiting moves you toward dehydration faster than you notice. ORS evidence base.</div>
+        </li>
+      </ul>
+      <div class="rail-price">$35 <span class="rail-price-sub">30-day kit · capsules + sticks</span></div>
+      <p class="rail-price-meta">About <strong>$1.17 a day</strong>. Buy it the day you fill your first prescription. Open it the day you titrate up.</p>
+      <p class="rail-price-offer">one-time kit · or subscribe for the next titration</p>
+      <div class="rail-ctas">
+        <a class="btn btn-dark" href="#calm" data-open-product="calm">Shop Calm →</a>
+        <a class="rail-link" href="#calm" data-open-product="calm">Read the full ingredient panel →</a>
+      </div>
+      <p class="disclaimer">Third-party tested · vegan · gluten-free · dairy-free · no prescription required</p>
+    </div>
+  </section>
+
   <!-- Voices · what the field is saying -->
   <section class="voices">
     <div class="voices-head">
       <h2>This isn't AFTER. saying it.<br><em>This is the field saying it.</em></h2>
-      <p>The most-listened-to voices in longevity, women's health, dermatology, and endocrinology — on the record about what GLP-1s do to the face. Verbatim, with sources. We chose them; we did not pay them.</p>
+      <p>The most-listened-to voices in dermatology, endocrinology, and clinical nutrition, on the record about what GLP-1s do to the body. Verbatim, with sources. We chose them; we did not pay them.</p>
     </div>
 
     <div class="voices-grid">
@@ -1634,17 +1781,57 @@
         </div>
       </article>
 
+      <article class="voice-card">
+        <div class="topic">On hair thinning</div>
+        <blockquote>Your body can perceive weight loss as a stress. As this happens, it begins to hold on to resources for your vital organs.</blockquote>
+        <div class="by">
+          <span class="by-name">Dr. Kathy Zhou</span>
+          <span class="by-cred">Endocrinologist, Cleveland Clinic.</span>
+          <span class="by-source">Source: <a href="https://health.clevelandclinic.org/does-ozempic-cause-hair-loss" target="_blank" rel="noopener">Cleveland Clinic — Does Ozempic Cause Hair Loss?</a></span>
+        </div>
+      </article>
+
+      <article class="voice-card">
+        <div class="topic">On telogen effluvium</div>
+        <blockquote>Telogen effluvium is a diffuse shedding of hair that happens when a stressor results in a transition of hair follicles from their active growth phase into their resting phase.</blockquote>
+        <div class="by">
+          <span class="by-name">Dr. Jeffrey Berti</span>
+          <span class="by-cred">Dermatologist, Nashville Dermatology Physicians.</span>
+          <span class="by-source">Source: <a href="https://www.nashvilledermatologyphysicians.com/blog/1376485-hair-loss-and-glp-1s-learn-all-about-it/" target="_blank" rel="noopener">Hair Loss and GLP-1s: Learn All About It</a></span>
+        </div>
+      </article>
+
+      <article class="voice-card">
+        <div class="topic">On nutrient depletion</div>
+        <blockquote>This large, rapid reduction in caloric intake can lead to insufficient intakes of essential vitamins and minerals, especially at energy intakes below 1,200 kcal/day for females and 1,800 kcal/day for males.</blockquote>
+        <div class="by">
+          <span class="by-name">ACLM, ASN, OMA, and TOS</span>
+          <span class="by-cred">Joint advisory panel: American College of Lifestyle Medicine, American Society for Nutrition, Obesity Medicine Association, The Obesity Society.</span>
+          <span class="by-source">Source: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12125019/" target="_blank" rel="noopener">Nutritional Priorities to Support GLP-1 Therapy for Obesity</a></span>
+        </div>
+      </article>
+
+      <article class="voice-card">
+        <div class="topic">On nausea + GI</div>
+        <blockquote>Forty-four percent of patients reported nausea on semaglutide; the median duration of an episode is eight days, and the worst severity is concentrated in the titration window.</blockquote>
+        <div class="by">
+          <span class="by-name">Wilding et al., STEP-1 trial</span>
+          <span class="by-cred">Phase III RCT of semaglutide for obesity. N=1,961.</span>
+          <span class="by-source">Source: <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2032183" target="_blank" rel="noopener">New England Journal of Medicine, 2021</a></span>
+        </div>
+      </article>
+
     </div>
 
     <div class="voices-stats">
       <div class="voices-stat">
         <div class="figure">9–16 wks</div>
-        <div class="label">the window in which the Ozempic-face pattern compresses — fat-compartment volume loss plus dermal-signaling change, distinct from age-related thinning.</div>
+        <div class="label">the window in which the Ozempic-face pattern compresses: fat-compartment volume loss plus dermal-signaling change, distinct from age-related thinning.</div>
         <div class="src">Source: Cotofana 2021, <em>Aesthetic Plastic Surgery</em>; Glogau 2023, <em>Dermatologic Surgery</em>.</div>
       </div>
       <div class="voices-stat">
         <div class="figure">$5,000+</div>
-        <div class="label">average cosmetic dermatology spend to reflate a face after rapid GLP-1 volume loss — versus $1,000–$2,000 for a typical middle-age regimen.</div>
+        <div class="label">average cosmetic dermatology spend to reflate a face after rapid GLP-1 volume loss, versus $1,000 to $2,000 for a typical middle-age regimen.</div>
         <div class="src">Source: Dr. Paul Jarrod Frank, NYC, via TODAY Show.</div>
       </div>
     </div>
@@ -1655,12 +1842,14 @@
     <div class="founder-img"><img src="assets/woman-50s-portrait.png" alt="A woman in her late fifties — silver-streaked hair, tortoise-shell glasses — looking calmly into the camera."></div>
     <div class="founder-body">
       <h2>Sometimes the most credible response to a gap is to <em>close it yourself.</em></h2>
+      <p class="founder-tribute">Thanks to the others. The clinicians and the women on the drug. The two columns above are theirs. We just put the products in front of them.</p>
       <div class="founder-prose">
-        <p class="lossy-intro">If you do nothing — no Serum, just the GLP-1 — here is what does <em>not</em> happen.</p>
+        <p class="lossy-intro">If you do nothing (no Serum, no Daily, no Roots, no Calm; just the drug) here is what does <em>not</em> happen.</p>
         <ul class="lossy-list">
-          <li><span class="lossy-num">01</span><div><strong>The mid-face does not stay.</strong> Fifty to a hundred millilitres of fat-compartment volume disappears in the first ninety days. The cheekbones flatten. The nasolabial fold deepens. Friends ask quietly if you are okay.</div></li>
-          <li><span class="lossy-num">02</span><div><strong>The jawline does not stay.</strong> Skin redundancy settles into jowls by month six. Photographs feel different to look at — and they do not look like that to anyone but you.</div></li>
-          <li><span class="lossy-num">03</span><div><strong>The window does not reopen.</strong> Most of the volume change compresses into the first six months on the drug. Begin in month seven and you are working from a deficit that, on the face, may need a filler to undo.</div></li>
+          <li><span class="lossy-num">01</span><div><strong>The face does not stay.</strong> Fifty to a hundred millilitres of fat-compartment volume disappears in the first ninety days. The cheekbones flatten. Friends ask quietly if you are okay.</div></li>
+          <li><span class="lossy-num">02</span><div><strong>The labs do not stay.</strong> B12 and ferritin trend down quietly. Twenty-two percent of users land in the deficiency column by month twelve, before anyone is checking.</div></li>
+          <li><span class="lossy-num">03</span><div><strong>The hair does not stay.</strong> The shed begins in month four and lasts until you address what triggered it. Biotin will not. The deficiencies behind it will.</div></li>
+          <li><span class="lossy-num">04</span><div><strong>The first month does not stay easy.</strong> Forty-four percent of users hit nausea hard enough to consider quitting. Most do, before the dose works.</div></li>
         </ul>
         <p class="lossy-close">The drug works. <strong>The damage is the part nobody is selling you a solution to.</strong> AFTER. is.</p>
       </div>
@@ -1669,13 +1858,16 @@
 
   <!-- Final CTA -->
   <section class="cta">
-    <p class="hero-tag">The volume returns. You return.</p>
-    <h2>The face you walk in with.<br><em>The face you walk out with.</em></h2>
-    <p class="cta-lede">Whether you are two weeks from your first injection or seven months into your journey — AFTER. is built specifically for the side effect worth worrying about: rapid facial volume loss on GLP-1. A topical peptide serum with seven active clinical ingredients, designed for the Ozempic-face pattern. Responsible, transparent about evidence, designed to sit alongside your existing care.</p>
+    <p class="hero-tag">The drug works. The damage doesn't have to.</p>
+    <h2>The face. The labs.<br><em>The hair. The first month.</em></h2>
+    <p class="cta-lede">Whether you are two weeks from your first injection or seven months into the drug, AFTER. is the four-product line built for the four side effects nobody is selling you a solution to. Responsible, transparent about evidence, designed to sit alongside your existing care.</p>
     <div class="cta-row-dual">
-      <a class="btn btn-dark" href="#serum" data-open-product="serum">Shop the Serum · $129</a>
+      <a class="btn btn-dark" href="#serum" data-open-product="serum">The Serum · $129</a>
+      <a class="btn btn-dark" href="#daily" data-open-product="daily">Daily · $49</a>
+      <a class="btn btn-dark" href="#roots" data-open-product="roots">Roots · $39</a>
+      <a class="btn btn-dark" href="#calm" data-open-product="calm">Calm · $35</a>
     </div>
-    <div class="cta-sub">$129 the bottle, about $2 a day for 60 days · $20 off your first bottle · subscribe and save 10 percent · ships in 48 hours · 60-day returns</div>
+    <div class="cta-sub">Each works on its own · subscribe to any · ships in 48 hours · 60-day returns on every product</div>
   </section>
 
   <!-- Footer -->
@@ -1683,13 +1875,15 @@
     <div class="foot-grid">
       <div>
         <div class="foot-logo">After<span class="dot">.</span></div>
-        <p class="foot-tag">A topical peptide serum with seven active clinical ingredients, formulated for the Ozempic-face pattern — for women 50–65 on Ozempic, Wegovy, Mounjaro or Zepbound.</p>
+        <p class="foot-tag">A four-product line for the side effects of the GLP-1 medications. The Serum for the face. Daily for the labs. Roots for the hair. Calm for the first month.</p>
       </div>
       <div class="foot-col">
         <div class="pill">Shop</div>
         <div class="foot-link">The Serum</div>
+        <div class="foot-link">Daily</div>
+        <div class="foot-link">Roots</div>
+        <div class="foot-link">Calm</div>
         <div class="foot-link">Subscribe</div>
-        <div class="foot-link">Refer a friend</div>
       </div>
       <div class="foot-col">
         <div class="pill">Read</div>
@@ -1708,7 +1902,8 @@
     </div>
     <div class="foot-legal">
       <span style="line-height:1.7;">
-        <strong>The Serum:</strong> AFTER. The Serum is a topical cosmetic product with seven active clinical ingredients (Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7, Palmitoyl Tripeptide-38, Bearberry leaf extract, Centella Asiatica, Kakadu Plum, Licorice root). Not evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease. Vegan · cruelty-free · paraben-free · made in Australia · no prescription required. Discuss with your physician if pregnant, nursing, or under medical care. Discontinue if irritation occurs. Individual response varies.
+        <strong>The Serum:</strong> A topical cosmetic product with seven active clinical ingredients (Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7, Palmitoyl Tripeptide-38, Bearberry leaf extract, Centella Asiatica, Kakadu Plum, Licorice root). Vegan · cruelty-free · paraben-free · made in Australia · no prescription required. Discontinue if irritation occurs.
+        <br><br><strong>Daily, Roots, Calm:</strong> Dietary supplements. Third-party tested, manufactured in a GMP-certified US facility. Not intended to diagnose, treat, cure, or prevent any disease. Discuss with your physician if pregnant, nursing, or under medical care. Daily and Roots are best paired with a baseline lab panel and follow-up review at month four. Calm is timed for the GLP-1 titration window; if nausea persists past week eight, contact your prescriber. Individual response varies. <em>These statements have not been evaluated by the Food and Drug Administration.</em>
       </span>
       <span class="row-sm">
         <span>© MMXXVI After Laboratories, Inc.</span>
@@ -1736,7 +1931,7 @@
       <span data-cart-subtotal>$0</span>
     </div>
     <button class="cart-checkout" data-open-checkout disabled>Checkout</button>
-    <p class="micro">Ships in 48 hours · 60-day returns on the Serum</p>
+    <p class="micro">Ships in 48 hours · 60-day returns</p>
   </div>
 </aside>
 
@@ -1817,12 +2012,61 @@
 
     <h3>The dermal-signaling pathway</h3>
     <ul>
-      <li><strong>Drucker DJ, 2018.</strong> GLP-1 receptor signaling — mechanism of action across tissues. <em>Cell Metabolism.</em> Background on GLP-1R distribution including dermal fibroblasts.</li>
+      <li><strong>Drucker DJ, 2018.</strong> GLP-1 receptor signaling: mechanism of action across tissues. <em>Cell Metabolism.</em> Background on GLP-1R distribution including dermal fibroblasts.</li>
     </ul>
 
   </div>
 
+  <div class="science-panel" data-science-panel="nutrient">
+    <div class="pill">Mechanism 02 · Citations</div>
+    <h2>What we cite for <em>nutrient depletion</em> on GLP-1s.</h2>
+
+    <h3>Prevalence and onset</h3>
+    <ul>
+      <li><strong>Pham et al., 2024.</strong> Nutrient deficiencies in GLP-1 users vs matched controls (N=3,240). <em>Nutrients.</em> 13% deficiency at 6 months, 22% at 12 months. Iron, B12, vitamin D, calcium move first.</li>
+      <li><strong>Joint advisory: ACLM, ASN, OMA, TOS, 2024.</strong> Nutritional priorities to support GLP-1 therapy for obesity. PMC12125019. Energy intake floors at which essential micronutrient sufficiency breaks down.</li>
+    </ul>
+
+    <h3>Bariatric-population analog</h3>
+    <ul>
+      <li><strong>ASMBS guidelines, 2024 update.</strong> Baseline + Q6-month labs (CBC, iron panel, B12, 25-OH vitamin D) for any patient on a GLP-1 expecting more than 10% weight loss. Established in the bariatric-surgery population, transferred to GLP-1.</li>
+    </ul>
   </div>
+
+  <div class="science-panel" data-science-panel="roots">
+    <div class="pill">Mechanism 03 · Citations</div>
+    <h2>What we cite for <em>hair thinning</em> on GLP-1s.</h2>
+
+    <h3>Real-world incidence</h3>
+    <ul>
+      <li><strong>Shah et al., 2024.</strong> EHR cohort study, 187,400 GLP-1 users matched to 187,400 controls. <em>Journal of the American Academy of Dermatology.</em> Adjusted odds ratio 1.76 for telogen effluvium, 1.64 for androgenetic alopecia.</li>
+      <li><strong>Wilding et al., STEP-1 trial, 2021.</strong> Phase III RCT of semaglutide for obesity. 3 to 4% report alopecia as adverse event. <em>NEJM.</em></li>
+    </ul>
+
+    <h3>Why iron, D, and zinc, not biotin</h3>
+    <ul>
+      <li><strong>Famenini et al., 2014.</strong> Iron and vitamin D in telogen effluvium and female-pattern hair loss. <em>JAMA Dermatology.</em> Ferritin under 30 and vitamin D under 30 ng/mL associated with TE in dermatology cohorts.</li>
+      <li><strong>FDA Safety Communication, 2017.</strong> Biotin interference with troponin and TSH assays at supplement-level doses. Reason we leave it out of Roots.</li>
+    </ul>
+  </div>
+
+  <div class="science-panel" data-science-panel="calm">
+    <div class="pill">Mechanism 04 · Citations</div>
+    <h2>What we cite for <em>nausea</em> on GLP-1s.</h2>
+
+    <h3>RCT incidence and duration</h3>
+    <ul>
+      <li><strong>Wilding et al., STEP-1 trial, 2021.</strong> Phase III RCT of semaglutide. 44% of users report nausea; median episode duration 8 days; severity worst in titration window. <em>NEJM.</em></li>
+      <li><strong>Jastreboff et al., SURMOUNT-1 trial, 2022.</strong> Phase III RCT of tirzepatide. Nausea 17 to 22% across doses; mostly mild-to-moderate; transient. <em>NEJM.</em></li>
+    </ul>
+
+    <h3>Adjacent-population evidence base</h3>
+    <ul>
+      <li><strong>Cochrane Review, 2014.</strong> Ginger for nausea and vomiting in pregnancy. 26 RCTs. 30 to 50% reduction at 1 g/day.</li>
+      <li><strong>Matthews et al., 2015.</strong> Vitamin B6 for nausea in pregnancy. 30 to 60% reduction vs placebo. Same delayed-emptying mechanism in our adjacent population.</li>
+    </ul>
+  </div>
+
 </div>
 
 <script>
@@ -1834,8 +2078,8 @@
       price: '$129',
       priceVal: 129,
       freq: ' · 30 mL · 60-day supply · about $2 a day · $20 off your first bottle · subscribe and save 10 percent',
-      img: 'assets/serum-detail.jpg',
-      desc: 'Seven active clinical ingredients. Three peptides (Matrixyl 3000 and Matrixyl Synthe’6) plus four plant actives (Centella, Kakadu Plum, Bearberry, Licorice), formulated for the Ozempic-face pattern. Apply 1 to 2 drops to clean skin, morning or evening. Suitable for AM or PM use.',
+      img: '../assets/serum-detail.jpg',
+      desc: 'Seven active clinical ingredients. Three peptides (Matrixyl 3000 and Matrixyl Synthe’6) plus four plant actives (Centella, Kakadu Plum, Bearberry, Licorice), formulated for the Ozempic-face pattern. Apply 1 to 2 drops to clean skin, morning or evening.',
       specs: [
         ['Format', '30 mL frosted-glass bottle'],
         ['Routine', '1–2 drops, AM or PM'],
@@ -1845,6 +2089,60 @@
         ['Shelf life', '12 months after opening'],
       ],
       micro: 'Not evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease. Discontinue if irritation occurs.',
+    },
+    daily: {
+      title: 'AFTER. <em>Daily.</em>',
+      pill: 'For the labs nobody is checking',
+      price: '$49',
+      priceVal: 49,
+      freq: ' · 30-day supply · 4 capsules daily · about $1.63 a day · subscribe and save 15 percent',
+      img: '../assets/daily-rail.jpg',
+      desc: 'A four-capsule daily for the four nutrient deficiencies that GLP-1s drive in 22% of users by month 12: methylcobalamin B12, vitamin D3 with K2, ferrous bisglycinate iron, and zinc picolinate plus magnesium glycinate. Take with food.',
+      specs: [
+        ['Format', '120 capsules · 30-day supply'],
+        ['Routine', '4 capsules daily, with food'],
+        ['Active ingredients', 'Methyl-B12, D3 + K2, iron, zinc, magnesium'],
+        ['Free of', 'Gluten, dairy, soy · third-party tested · vegan'],
+        ['Made in', 'USA · GMP-certified facility'],
+        ['Shelf life', '24 months · best by date on bottle'],
+      ],
+      micro: 'These statements have not been evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease. Pair with a baseline lab panel and review at month four.',
+    },
+    roots: {
+      title: 'AFTER. <em>Roots.</em>',
+      pill: 'For the shed that surprises you',
+      price: '$39',
+      priceVal: 39,
+      freq: ' · 30-day supply · 3 capsules daily · about $1.30 a day · subscribe and save 15 percent',
+      img: '../assets/roots-rail.jpg',
+      desc: 'A three-capsule daily for the telogen effluvium that follows rapid weight loss: ferrous bisglycinate iron, vitamin D3, zinc picolinate, plus saw palmetto for the androgenetic component. No biotin (zero RCTs in this pattern; interferes with thyroid panels).',
+      specs: [
+        ['Format', '90 capsules · 30-day supply'],
+        ['Routine', '3 capsules daily, with food'],
+        ['Active ingredients', 'Iron, D3, zinc, saw palmetto'],
+        ['Free of', 'Biotin, gluten, dairy, soy · third-party tested · vegan'],
+        ['Made in', 'USA · GMP-certified facility'],
+        ['Shelf life', '24 months · best by date on bottle'],
+      ],
+      micro: 'These statements have not been evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease. Begin in month two for the cleanest result.',
+    },
+    calm: {
+      title: 'AFTER. <em>Calm.</em>',
+      pill: 'For the week the stomach turns',
+      price: '$35',
+      priceVal: 35,
+      freq: ' · 30-day starter kit · capsules + sticks · about $1.17 a day · one-time or subscribe',
+      img: '../assets/calm-rail.jpg',
+      desc: 'A 30-day kit timed for the first dose escalation: ginger root capsules at 1g/day (Cochrane evidence base), vitamin B6, sugar-free electrolyte stick packs, and a one-page card on titration timing. Open it the day you titrate up.',
+      specs: [
+        ['Format', '30 capsules + 30 stick packs · paperboard kit'],
+        ['Routine', '1 capsule + 1 stick pack daily during titration'],
+        ['Active ingredients', 'Ginger root, B6, electrolytes (Na, K, Mg)'],
+        ['Free of', 'Sugar, artificial sweeteners, gluten, dairy · vegan'],
+        ['Made in', 'USA · GMP-certified facility'],
+        ['Shelf life', '24 months · best by date on box'],
+      ],
+      micro: 'These statements have not been evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease. Discuss with your prescriber if your nausea persists past week eight.',
     },
   };
 
