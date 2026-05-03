@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/aplomb-mark.svg">
 <style>
   :root {
     --bg: #efe8dc;
@@ -53,7 +54,9 @@
     padding: 26px 72px; border-bottom: 1px solid var(--rule);
     background: var(--paper);
   }
-  .logo { font-family: var(--serif); font-size: 28px; font-weight: 500; letter-spacing: -0.02em; font-style: italic; }
+  .logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--serif); font-size: 28px; font-weight: 500; letter-spacing: -0.02em; font-style: italic; line-height: 1; }
+  .logo .mark { width: 12px; height: 32px; color: var(--amber); flex-shrink: 0; display: block; }
+  .logo .word { font-style: italic; }
   .logo .dot { color: var(--amber); font-style: normal; }
   .nav-links { display: flex; gap: 38px; font-size: 13px; }
   .nav-right { display: flex; gap: 22px; align-items: center; font-size: 13px; }
@@ -415,7 +418,9 @@
   /* Footer */
   .foot { background: var(--ink); color: var(--paper); padding: 80px 72px 40px; }
   .foot-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 60px; }
-  .foot-logo { font-family: var(--serif); font-size: 26px; font-style: italic; }
+  .foot-logo { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 6px; font-family: var(--serif); font-size: 26px; font-style: italic; line-height: 1; }
+  .foot-logo .mark { width: 14px; height: 38px; color: var(--amber-light); display: block; }
+  .foot-logo .word { font-style: italic; }
   .foot-logo .dot { color: var(--amber-light); font-style: normal; }
   .foot-tag {
     font-family: var(--serif); font-style: italic; font-size: 17px;
@@ -1348,7 +1353,8 @@
     .nav { padding: 18px 20px; }
     .nav-links { display: none; }
     .nav-right { font-size: 11px; gap: 14px; }
-    .logo { font-size: 22px; }
+    .logo { font-size: 22px; gap: 8px; }
+    .logo .mark { width: 10px; height: 26px; }
     .bag { padding: 6px 10px; font-size: 11px; }
 
     /* Pre-hero loss strip */
@@ -1518,7 +1524,10 @@
 
   <!-- Nav -->
   <header class="nav">
-    <div class="logo">Aplomb<span class="dot">.</span></div>
+    <div class="logo">
+      <svg class="mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 64" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="38" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/><path d="M 12 38 L 17.5 46 L 12 60 L 6.5 46 Z" fill="currentColor"/></svg>
+      <span class="word">Aplomb<span class="dot">.</span></span>
+    </div>
     <nav class="nav-links">
       <a href="#serum">Serum</a>
       <a href="#daily">Daily</a>
@@ -1874,7 +1883,10 @@
   <footer class="foot">
     <div class="foot-grid">
       <div>
-        <div class="foot-logo">Aplomb<span class="dot">.</span></div>
+        <div class="foot-logo">
+          <svg class="mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 64" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="38" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/><path d="M 12 38 L 17.5 46 L 12 60 L 6.5 46 Z" fill="currentColor"/></svg>
+          <span class="word">Aplomb<span class="dot">.</span></span>
+        </div>
         <p class="foot-tag">Built for the side effects of the GLP-1 medications. The Serum for the face. Daily for the labs. Roots for the hair. Calm for the first month.</p>
       </div>
       <div class="foot-col">

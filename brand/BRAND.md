@@ -9,23 +9,63 @@ This document is the single source of truth for the visual and verbal identity. 
 
 ---
 
-## 1. Wordmark
+## 1. Logo system
 
-**APLOMB.** rendered in **Cormorant Garamond, italic, 500 weight**, with a deep amber **period** as the visual signature.
+The logo has two parts: a **mark** and a **wordmark**. Both are sacred. Both are amber-accented.
 
-```html
-<div class="logo">Aplomb<span class="dot">.</span></div>
+### 1a. The mark — plumb-bob
+
+A vertical amber thread ending in a triangular plumb-bob plummet. It draws the etymology *à plomb* — "according to the plumb line, staying upright." The customer's psychological project, made visible.
+
+Canonical SVG file: [`assets/aplomb-mark.svg`](../assets/aplomb-mark.svg). `currentColor` so it inherits any context's amber.
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 64" aria-hidden="true">
+  <line x1="12" y1="2" x2="12" y2="38" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/>
+  <path d="M 12 38 L 17.5 46 L 12 60 L 6.5 46 Z" fill="currentColor"/>
+</svg>
 ```
 
-```css
-.logo { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500;
-        letter-spacing: -0.02em; font-style: italic; }
-.logo .dot { color: var(--amber); }
-```
+**Mark color:** always deep amber `#7a3d14` (or `--amber-light` `#d9a06b` on dark backgrounds, e.g. footer).
+**Mark dimensions:** native viewBox `24×64`. Render at intended size — never stretch, never recolor outside palette.
+**Mark alone:** allowed for favicon, social avatar, packaging emboss, foil stamp.
+
+### 1b. The wordmark
+
+**Aplomb.** in **Cormorant Garamond, italic, 500 weight**, with a deep amber **period**.
 
 - Cap-A only at the start ("Aplomb.") in the wordmark.
 - All-caps **APLOMB.** allowed in body copy headlines and product naming ("APLOMB. Daily.")
 - The period is sacred. Always present, always amber.
+
+### 1c. Lockups
+
+| Lockup | Use | Composition |
+|---|---|---|
+| **Inline** (mark left, wordmark right) | Nav, header bars, horizontal compact contexts | Mark height ≈ wordmark cap height, gap 10px |
+| **Stacked** (mark above, wordmark below) | Footer, hero, packaging front, brand presentation | Mark height ≈ 1.5× wordmark height, gap 6px |
+| **Mark-only** | Favicon, social avatar, foil stamp, embossed seal | Mark centered, generous breathing room |
+
+```html
+<!-- Inline lockup (used in nav) -->
+<div class="logo">
+  <svg class="mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 64" aria-hidden="true">
+    <line x1="12" y1="2" x2="12" y2="38" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/>
+    <path d="M 12 38 L 17.5 46 L 12 60 L 6.5 46 Z" fill="currentColor"/>
+  </svg>
+  <span class="word">Aplomb<span class="dot">.</span></span>
+</div>
+```
+
+```css
+.logo { display: inline-flex; align-items: center; gap: 10px;
+        font-family: var(--serif); font-size: 28px; font-weight: 500;
+        letter-spacing: -0.02em; font-style: italic; line-height: 1; }
+.logo .mark { width: 12px; height: 32px; color: var(--amber); flex-shrink: 0; display: block; }
+.logo .dot { color: var(--amber); font-style: normal; }
+```
+
+**Reference image:** `Logo Designs/02-plumb-line-mark.jpg` is the canonical hero treatment of the stacked lockup. Selected as the default logo on 2026-05-02.
 
 ## 2. Color Palette
 
