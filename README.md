@@ -61,9 +61,11 @@ See [`brand/BRAND.md`](brand/BRAND.md) for the canonical brand spec. Highlights:
 - **Tone:** editorial, clinical, restrained — Aesop / Augustinus Bader / The Ordinary.
 - **Trademarks:** never use Ozempic / Wegovy / Mounjaro / Zepbound / semaglutide / tirzepatide in copy or domain names. "GLP-1" is the generic class name — safe.
 
-## Deploy (deferred)
+## Deploy
 
-Domain hasn't been purchased yet — this folder is ready to deploy once `aplomb.clinic` (or `getaplomb.com`) is registered. Likely path: GitHub Pages or Cloudflare Pages, single-file site, no build step.
+Live at **https://getaplomb.com** (GitHub Pages serving from `main` branch root; DNS on Cloudflare in gray-cloud / DNS-only mode so GitHub manages the Let's Encrypt cert directly).
+
+Custom domain is set via the repo-root `CNAME` file (single line: `getaplomb.com`). Pages rebuilds on every push to `main`; takes ~1–2 min. The old project URL `https://zacharybpoll-cmyk.github.io/aplomb-clinic/` now 301-redirects to the custom domain automatically.
 
 ## Lineage
 
